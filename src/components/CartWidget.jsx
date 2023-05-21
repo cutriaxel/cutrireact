@@ -6,7 +6,7 @@ function CartWidget() {
   return (
     <div className="cart-widget">
       <FontAwesomeIcon icon={faShoppingCart} />
-      <span className="badge">4</span>
+      <span className="badge badge-black">4</span>
     </div>
   );
 }

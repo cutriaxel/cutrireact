@@ -31,7 +31,7 @@ function NavBar() {
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0 justify-content-center">
-          <div className="input-group">
+          <div className="input-group" style={{ marginRight: '10px' }}>
             <input
               className="form-control"
               type="search"
