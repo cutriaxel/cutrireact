@@ -46,3 +46,12 @@
 .badge-black {
   color: black;
 }
+
+.form-control {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.navbar {
+  background-color: #2359a2
+}

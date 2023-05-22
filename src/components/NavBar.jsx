@@ -3,7 +3,7 @@ import CartWidget from './CartWidget';
 
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg">
       <a className="navbar-brand" href="#">
         <img src="/path/to/logo.png" alt="Logo" className="logo" />
       </a>
@@ -39,7 +39,7 @@ function NavBar() {
               aria-label="Buscar"
             />
             <div className="input-group-append">
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-outline-primary" type="submit">
                 Buscar
               </button>
             </div>
