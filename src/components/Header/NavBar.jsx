@@ -1,3 +1,5 @@
+// NavBar.jsx
+
 import React from 'react';
 import './NavBar.scss';
 import CartWidget from '../CartWidget/CartWidget';
@@ -6,10 +8,9 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import logo from '..//..//assets/react.svg';
 
-import logo from '..//..//assets/react.svg'; // Importa tu logotipo y ajusta la ruta
-
-function NavBar() {
+function NavBar({ cartCount }) {
   return (
     <header>
       <Navbar className='nav__container' expand="lg">
@@ -27,7 +28,6 @@ function NavBar() {
               <Nav.Link className='nav__link' href="#action1" style={{ color: 'white'}}>Inicio</Nav.Link>
               <Nav.Link className='nav__link' href="#action2" style={{ color: 'white' }}>Productos</Nav.Link>
               <Nav.Link className='nav__link' href="#action1" style={{ color: 'white' }}>Contacto</Nav.Link>
-
             </Nav>
 
             <div className='form__container'>
@@ -42,7 +42,7 @@ function NavBar() {
               </Form>
             </div>
           </Navbar.Collapse>
-          <CartWidget />
+          <CartWidget cartCount={cartCount} />
         </Container>
       </Navbar>
     </header>
@@ -50,4 +50,6 @@ function NavBar() {
 }
 
 export default NavBar;
+
+
 

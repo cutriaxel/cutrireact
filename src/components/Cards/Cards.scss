@@ -1,0 +1,42 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  margin-right: 60px;
+ background-color: red;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card-container .card {
+  background-color: rgb(10, 10, 182);
+}
+
+.card-container .card .card-text {
+  color: white;
+  
+  
+}
+
+.card-container .card .card-title {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+
