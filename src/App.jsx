@@ -1,6 +1,6 @@
-import './App.css'
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import NavBar from './components/Header/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
       <NavBar />
 
     <div>
-      <ItemListContainer greeting="Hola, bienvenido" />
+      <ItemListContainer nombre="Hola, Axel Cutri" />
     </div>  
 
     </div>
