@@ -33,7 +33,7 @@ function Cards({ addToCart }) {
     <div className="card-container">
       {cardData.map((card) => (
         <Card key={card.id}>
-          <Card.Img src={card.image} />
+          <Card.Img className="card-img" src={card.image} alt="Procesador"/>
           <Card.Body>
             <Card.Title>{card.title}</Card.Title>
             <Card.Text>{card.price}</Card.Text>
