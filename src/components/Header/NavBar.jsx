@@ -46,6 +46,7 @@ function NavBar({ cartCount }) {
         </Container>
       </Navbar>
     </header>
+    
   );
 }
 
