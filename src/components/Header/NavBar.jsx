@@ -66,7 +66,7 @@ function NavBar({ cartCount }) {
             ) : (
               <FaBars color="white" onClick={toggleSidebar}  size={24} />
             )}
-            <span className="sidebar__text">BUSQUEDA POR CATEGORIA</span>
+            <span className="sidebar__text">BÚSQUEDA POR CATEGORÍA</span>
           </div>
         </Navbar.Toggle>
         {showSidebar && (
