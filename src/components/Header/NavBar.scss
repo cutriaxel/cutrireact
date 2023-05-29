@@ -32,43 +32,46 @@
   position: fixed;
   left: 0;
   z-index: 9999;
-}
 
-.sidebar__container.active {
-  transform: translateX(0);
-}
+  &.active {
+    transform: translateX(0);
+  }
 
-@media (max-width: 768px) {
-  .sidebar {
+  @media (max-width: 768px) {
     width: 100%;
   }
-}
 
-.sidebar__list {
-  list-style: none;
-  margin-left: 20px;
-  padding: 0;
-}
+  &__list {
+    list-style: none;
+    margin-left: 20px;
+    padding: 0;
 
-.sidebar__item {
-  margin-bottom: 1rem;
-}
+    li {
+      margin-bottom: 1rem;
 
-.sidebar__link {
-  text-decoration: none;
-  color: green;
-}
+      a {
+        text-decoration: none;
+        color: green;
 
-.sidebar__list li:hover {
-  color: white;
-}
+        &:hover {
+          color: white;
+        }
+      }
 
-.sidebar__link:hover {
-  color: white;
-}
+      &:hover {
+        color: white;
+      }
+    }
+  }
 
-.sidebar {
   overflow-y: auto;
   padding-top: 2rem;
+
+  &__text {
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
 }
 
