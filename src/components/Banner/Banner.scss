@@ -1,0 +1,13 @@
+.banner__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.banner__image {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 50px;
+}

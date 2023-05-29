@@ -1,0 +1,11 @@
+.custom-carousel {
+  width: 100%;
+  height: auto;
+
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  filter: invert(75%) sepia(95%) saturate(1766%) hue-rotate(73deg)
+    brightness(96%) contrast(98%);
+}

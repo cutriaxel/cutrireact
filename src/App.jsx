@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import NavBar from './components/Header/NavBar';
 import Cards from './components/Cards/Cards';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Carousel from './components/Carousel/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Banner from './components/Banner/Banner';
+import PcRecomendadas from './components/PcRecomendadas/PcRecomendadas';
 
 
 function App() {
@@ -15,7 +18,17 @@ function App() {
   return (
     <div>
       <NavBar cartCount={cartCount} />
-      <div>
+      
+        <div>
+          <Carousel />
+        </div>
+        <div>
+          <Banner />
+        </div>
+        <div>
+          <PcRecomendadas />
+        </div>
+        <div>
         <ItemListContainer nombre="Hola, Axel Cutri" />
       </div>
       <Cards addToCart={addToCart} />
