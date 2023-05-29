@@ -5,6 +5,10 @@ import { Card, Button } from "react-bootstrap";
 import imagen1 from '..//..//assets/imagen1.jpg';
 import imagen2 from '..//..//assets/imagen2.jpg';
 import imagen3 from '..//..//assets/imagen3.jpg';
+import imagen4 from '..//..//assets/imagen4.jpg';
+import imagen5 from '..//..//assets/imagen5.jpg';
+import imagen6 from '..//..//assets/imagen6.jpg';
+import imagen7 from '..//..//assets/imagen7.jpg';
 import './Cards.scss';
 
 const cardData = [
@@ -26,6 +30,31 @@ const cardData = [
     title: "Micro Amd Ryzen 9 5900x 4.8 Ghz Am4",
     price: "$295.000"
   },
+  {
+    id: 4,
+    image: imagen4,
+    title: "Micro Amd Ryzen 9 5900x 4.8 Ghz Am4",
+    price: "$295.000"
+  },
+  {
+    id: 5,
+    image: imagen5,
+    title: "Micro Amd Ryzen 9 5900x 4.8 Ghz Am4",
+    price: "$295.000"
+  },
+  {
+    id: 6,
+    image: imagen6,
+    title: "Micro Amd Ryzen 9 5900x 4.8 Ghz Am4",
+    price: "$295.000"
+  },
+  {
+    id: 7,
+    image: imagen7,
+    title: "Micro Amd Ryzen 9 5900x 4.8 Ghz Am4",
+    price: "$295.000"
+  },
+  
 ];
 
 function Cards({ addToCart }) {

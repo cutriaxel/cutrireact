@@ -2,31 +2,37 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
- 
- 
   padding: 30px;
 
   .card {
     width: 200px;
-    margin-right: 60px;
+    margin: 10px;
     background-color: #181a1b;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.1s ease;
 
     &:last-child {
       margin-right: 0;
     }
 
-    & .card-text {
+    &:hover {
+      border-color: #40a640;
+      box-shadow: 0 0 5px 2px #01f603;
+    }
+
+    .card-body {
+      background-color: inherit;
+    }
+
+    .card-text {
       color: white;
     }
 
-    & .card-title {
-      color: #40a640;;
+    .card-title {
+      color: #40a640;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-
-    order: 1px solid #01f603;
-    box-shadow: 0 0 5px 2px #01f603;
-    transition: .1s;
   }
 
   .card-body {
