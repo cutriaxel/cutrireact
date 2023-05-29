@@ -2,13 +2,14 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9808298319327731) 32%, rgba(0,212,255,1) 93%);
+ 
+ 
+  padding: 30px;
 
   .card {
     width: 200px;
     margin-right: 60px;
-    background-color: rgb(10, 10, 182);
+    background-color: #181a1b;
 
     &:last-child {
       margin-right: 0;
@@ -19,9 +20,13 @@
     }
 
     & .card-title {
-      color: white;
+      color: #40a640;;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+
+    order: 1px solid #01f603;
+    box-shadow: 0 0 5px 2px #01f603;
+    transition: .1s;
   }
 
   .card-body {

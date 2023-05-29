@@ -1,6 +1,4 @@
-// NavBar.jsx
-
-import React from 'react';
+import React, { useState } from 'react';
 import './NavBar.scss';
 import CartWidget from '../CartWidget/CartWidget';
 import Button from 'react-bootstrap/Button';
@@ -9,8 +7,15 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '..//..//assets/react.svg';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 function NavBar({ cartCount }) {
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
+
   return (
     <header>
       <Navbar className='nav__container' expand="lg">
@@ -18,7 +23,7 @@ function NavBar({ cartCount }) {
           <div className='logo__container'>
             <img src={logo} alt="Logo" className="logo" />
           </div>
-          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Toggle aria-controls="navbarScroll" onClick={toggleSidebar} />
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="link my-2 my-lg-0"
@@ -38,19 +43,62 @@ function NavBar({ cartCount }) {
                   className="me-4"
                   aria-label="Search"
                 />
-                <Button variant="primary">Buscar</Button>
+                <Button variant="success">Buscar</Button>
               </Form>
             </div>
           </Navbar.Collapse>
           <CartWidget cartCount={cartCount} />
         </Container>
       </Navbar>
+
+      <div className="sidebar__container">
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <div className='hamburguer-button'>
+          {showSidebar ? (
+            <FaTimes color="white" onClick={toggleSidebar} />
+          ) : (
+            <FaBars color="white" onClick={toggleSidebar} />
+          )}
+          </div>
+        </Navbar.Toggle>
+        {showSidebar && (
+          <div className="sidebar">
+            <ul className="sidebar__list">
+            <li className="sidebar__item">
+                <a href="#computadoras" className="sidebar__link">ARMA TU PC</a>
+              </li>
+              <li className="sidebar__item">
+                <a href="#computadoras" className="sidebar__link">ARMA TU COMBO</a>
+              </li>
+              <hr style={{ color: 'white'}} />
+              <li className="sidebar__item">
+                <a href="#computadoras" className="sidebar__link">Notebooks</a>
+              </li>
+              <li className="sidebar__item">
+                <a href="#procesadores" className="sidebar__link">Computadoras</a>
+              </li>
+              <li className="sidebar__item">
+                <a href="#placa-videos" className="sidebar__link">Componentes de PC</a>
+              </li>
+              <li className="sidebar__item">
+                <a href="#componentes" className="sidebar__link">Monitores</a>
+              </li>
+              <li className="sidebar__item">
+                <a href="#perifericos" className="sidebar__link">Perifericos</a>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
     </header>
-    
   );
 }
 
 export default NavBar;
+
+
+
+
 
 
 

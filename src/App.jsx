@@ -4,6 +4,7 @@ import Cards from './components/Cards/Cards';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function App() {
   const [cartCount, setCartCount] = useState(0);
 

@@ -1,5 +1,5 @@
 .nav__container {
-  background-color: rgb(10, 10, 182);
+  background-color: #0e0f0f !important;
 }
 
 .form__container {
@@ -10,3 +10,65 @@
   margin-left: 20px;
   margin-right: 50px;
 }
+
+.hamburguer-button {
+  margin-left: 30px;
+  padding: 15px;
+}
+
+.sidebar__container {
+  background-color: #181a1b !important;
+  border-top: 0 !important;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 15%;
+  height: 100vh;
+  background-color: black;
+  padding-top: 2rem;
+  position: fixed;
+  left: 0;
+  z-index: 9999;
+}
+
+.sidebar__container.active {
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.sidebar__list {
+  list-style: none;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.sidebar__item {
+  margin-bottom: 1rem;
+}
+
+.sidebar__link {
+  text-decoration: none;
+  color: green;
+}
+
+.sidebar__list li:hover {
+  color: white;
+}
+
+.sidebar__link:hover {
+  color: white;
+}
+
+.sidebar {
+  overflow-y: auto;
+  padding-top: 2rem;
+}
+

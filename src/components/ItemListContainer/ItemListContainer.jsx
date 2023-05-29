@@ -9,7 +9,7 @@ function ItemListContainer({ nombre }) {
       <div className="list__container">
         <div>
           <h2>{nombre}</h2>
-          <hr />
+          <hr style={{ color: 'white'}}/>
           <p>Bienvenido a cutriTech!</p>
         </div>
 
