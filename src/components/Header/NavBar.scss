@@ -75,3 +75,26 @@
   }
 }
 
+.cart__container {
+  display: flex;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.cart__container p {
+  margin-right: 5px;
+}
+
+.cart-widget__count span {
+
+  background-color: #40A640;
+  margin-left: 5px;
+  border-radius: 70%;
+  color: #000;
+  font-weight: 700;
+  min-width: 24px;
+  padding: 4px;
+  text-align: center;
+}

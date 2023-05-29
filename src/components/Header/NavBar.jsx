@@ -47,55 +47,63 @@ function NavBar({ cartCount }) {
               </Form>
             </div>
           </Navbar.Collapse>
-          <CartWidget cartCount={cartCount} />
+          <div className='cart__container'>
+            <div>
+            <p>Mi Carrito</p>
+            </div>
+            <div className='cart-widget__count'>
+            <CartWidget cartCount={cartCount} />
+            </div>
+          </div>
         </Container>
       </Navbar>
 
       <div className="sidebar__container">
-  <Navbar.Toggle aria-controls="basic-navbar-nav">
-    <div className='hamburguer-button'>
-      {showSidebar ? (
-        <FaTimes color="white" onClick={toggleSidebar} size={24} />
-      ) : (
-        <FaBars color="white" onClick={toggleSidebar}  size={24} />
-      )}
-      <span className="sidebar__text">BUSQUEDA POR CATEGORIA</span>
-    </div>
-  </Navbar.Toggle>
-  {showSidebar && (
-    <div className="sidebar">
-      <ul className="sidebar__list">
-        <li className="sidebar__item">
-          <a href="#computadoras" className="sidebar__link">ARMA TU PC</a>
-        </li>
-        <li className="sidebar__item">
-          <a href="#computadoras" className="sidebar__link">ARMA TU COMBO</a>
-        </li>
-        <hr style={{ color: 'white'}} />
-        <li className="sidebar__item">
-          <a href="#computadoras" className="sidebar__link">Notebooks</a>
-        </li>
-        <li className="sidebar__item">
-          <a href="#procesadores" className="sidebar__link">Computadoras</a>
-        </li>
-        <li className="sidebar__item">
-          <a href="#placa-videos" className="sidebar__link">Componentes de PC</a>
-        </li>
-        <li className="sidebar__item">
-          <a href="#componentes" className="sidebar__link">Monitores</a>
-        </li>
-        <li className="sidebar__item">
-          <a href="#perifericos" className="sidebar__link">Periféricos</a>
-        </li>
-      </ul>
-    </div>
-  )}
-</div>
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <div className='hamburguer-button'>
+            {showSidebar ? (
+              <FaTimes color="white" onClick={toggleSidebar} size={24} />
+            ) : (
+              <FaBars color="white" onClick={toggleSidebar}  size={24} />
+            )}
+            <span className="sidebar__text">BUSQUEDA POR CATEGORIA</span>
+          </div>
+        </Navbar.Toggle>
+        {showSidebar && (
+          <div className="sidebar">
+            <ul className="sidebar__list">
+              <li className="sidebar__item">
+                <a href="#computadoras" className="sidebar__link">ARMA TU PC</a>
+              </li>
+              <li className="sidebar__item">
+                <a href="#computadoras" className="sidebar__link">ARMA TU COMBO</a>
+              </li>
+              <hr style={{ color: 'white'}} />
+              <li className="sidebar__item">
+                <a href="#computadoras" className="sidebar__link">Notebooks</a>
+              </li>
+              <li className="sidebar__item">
+                <a href="#procesadores" className="sidebar__link">Computadoras</a>
+              </li>
+              <li className="sidebar__item">
+                <a href="#placa-videos" className="sidebar__link">Componentes de PC</a>
+              </li>
+              <li className="sidebar__item">
+                <a href="#componentes" className="sidebar__link">Monitores</a>
+              </li>
+              <li className="sidebar__item">
+                <a href="#perifericos" className="sidebar__link">Periféricos</a>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
     </header>
   );
 }
 
 export default NavBar;
+
 
 
 
