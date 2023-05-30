@@ -8,9 +8,9 @@ function ItemListContainer({ nombre }) {
     <div className='container__principal'>
       <div className="list__container">
         <div>
-          <h2>{nombre}</h2>
+          <h5>{nombre} <strong>Destacados</strong> </h5>
           <hr style={{ color: 'white'}}/>
-          <p>Bienvenido a cutriTech!</p>
+          <a href='#action1' style={{ color: '#40a640'}} >Ver todo</a>
         </div>
 
       </div>

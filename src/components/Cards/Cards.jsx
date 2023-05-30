@@ -33,26 +33,26 @@ const cardData = [
   {
     id: 4,
     image: imagen4,
-    title: "Micro Amd Ryzen 9 5900x 4.8 Ghz Am4",
-    price: "$295.000"
+    title: "Monitor LED CURVO 24 Samsung",
+    price: "$108.823"
   },
   {
     id: 5,
     image: imagen5,
-    title: "Micro Amd Ryzen 9 5900x 4.8 Ghz Am4",
-    price: "$295.000"
+    title: "Silla Gamer Genesis RGB Black",
+    price: "$134.999"
   },
   {
     id: 6,
     image: imagen6,
-    title: "Micro Amd Ryzen 9 5900x 4.8 Ghz Am4",
-    price: "$295.000"
+    title: "Fury Thunderstreak Combo",
+    price: "$11.834"
   },
   {
     id: 7,
     image: imagen7,
-    title: "Micro Amd Ryzen 9 5900x 4.8 Ghz Am4",
-    price: "$295.000"
+    title: "Auricular Genesis Neon 750 Rgb Black",
+    price: "$21.250"
   },
   
 ];

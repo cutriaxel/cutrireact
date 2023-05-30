@@ -5,9 +5,11 @@ $list-container-max-width: 1100px;
   margin: 0 auto;
   padding: 40px 0;
 
-  h2 {
-    color: #40a640;
-    font-weight: 700;
+  h5 {
+    color: #c1bcb4 !important;
+    font-size: 1.7em;
+    font-weight: 400;
+    text-transform: capitalize;
   }
 
   p {

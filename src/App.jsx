@@ -29,7 +29,7 @@ function App() {
           <PcRecomendadas />
         </div>
         <div>
-        <ItemListContainer nombre="Hola, Axel Cutri" />
+        <ItemListContainer nombre="Productos" />
       </div>
       <Cards addToCart={addToCart} />
     </div>
