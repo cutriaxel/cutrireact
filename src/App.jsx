@@ -6,6 +6,7 @@ import Carousel from './components/Carousel/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Banner from './components/Banner/Banner';
 import PcRecomendadas from './components/PcRecomendadas/PcRecomendadas';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -31,7 +32,12 @@ function App() {
         <div>
         <ItemListContainer nombre="Productos" />
       </div>
+      <div>
       <Cards addToCart={addToCart} />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
