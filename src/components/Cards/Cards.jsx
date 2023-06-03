@@ -1,3 +1,5 @@
+// Cards.jsx
+
 import React, { useEffect, useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import imagen1 from '..//..//assets/imagen1.jpg';
@@ -77,7 +79,7 @@ const Cards = ({ addToCart }) => {
           <Card.Body>
             <Card.Title>{card.title}</Card.Title>
             <Card.Text>{card.price}</Card.Text>
-            <Button variant="success" onClick={addToCart} id="center-button">
+            <Button variant="success" onClick={() => addToCart(card)} id="center-button">
               AÑADIR
             </Button>
           </Card.Body>
@@ -85,6 +87,9 @@ const Cards = ({ addToCart }) => {
       ))}
     </div>
   );
-}
+};
 
 export default Cards;
+
+
+
