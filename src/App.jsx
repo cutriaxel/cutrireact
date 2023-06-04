@@ -13,7 +13,7 @@ function App() {
   const [cartCount, setCartCount] = useState(0);
 
   const addToCart = () => {
-    console.log("added");
+    
     setCartCount(prevCount => prevCount + 1);
   };
 
