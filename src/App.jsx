@@ -13,32 +13,21 @@ function App() {
   const [cartCount, setCartCount] = useState(0);
 
   const addToCart = () => {
+    console.log("added");
     setCartCount(prevCount => prevCount + 1);
   };
 
   return (
-    <div>
+    <>
       <NavBar cartCount={cartCount} />
-      
-        <div>
-          <Carousel />
-        </div>
-        <div>
-          <Banner />
-        </div>
-        <div>
-          <PcRecomendadas />
-        </div>
-        <div>
-        <ItemListContainer nombre="Productos" />
-      </div>
-      <div>
+      <Carousel />
+      <Banner />
+      <PcRecomendadas />
+      <ItemListContainer nombre="Productos" />
       <Cards addToCart={addToCart} />
-      </div>
-      <div>
-        <Footer />
-      </div>
-    </div>
+      <Footer />
+
+    </>
   );
 }
 

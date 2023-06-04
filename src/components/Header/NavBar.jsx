@@ -51,7 +51,7 @@ function NavBar({ cartCount }) {
             <div>
             <p>Mi Carrito</p>
             </div>
-            <div className='cart-widget__count'>
+            <div className='cart-widget__count' >
             <CartWidget cartCount={cartCount} />
             </div>
           </div>
