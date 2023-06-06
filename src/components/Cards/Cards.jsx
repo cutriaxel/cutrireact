@@ -1,17 +1,15 @@
-// Cards.jsx
-
 import React, { useEffect, useState } from "react";
 import './Cards.scss';
 import { fetchData } from "../../helpers/FetchData";
-import { CustomCard } from '..//CustomCard/CustomCard'
+import { CustomCard } from '..//CustomCard/CustomCard';
 
 
 const Cards = ({ addToCart }) => {
   const [cardData, setCardData] = useState([]);
   useEffect(() => {
-  fetchData(setCardData);
+    fetchData(setCardData);
   }, []);
-  
+
   return (
     <div className="card-container">
       {cardData.map((card) => (
@@ -22,6 +20,5 @@ const Cards = ({ addToCart }) => {
 };
 
 export default Cards;
-
 
 

@@ -7,19 +7,41 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Banner from './components/Banner/Banner';
 import PcRecomendadas from './components/PcRecomendadas/PcRecomendadas';
 import Footer from './components/Footer/Footer';
-
+import CartModal from './components/CartModal/CartModal';
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
+  const [cartItems, setCartItems] = useState([]);
+  const [totalPrice, setTotalPrice] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
-  const addToCart = () => {
-    
+  const addToCart = (item) => {
     setCartCount(prevCount => prevCount + 1);
+    setCartItems(prevItems => [...prevItems, item]);
+    setTotalPrice(prevPrice => prevPrice + item.price);
+  };
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  const handleConfirmPurchase = () => {
+    // Aquí puedes implementar la lógica para confirmar la compra
+    // Por ejemplo, puedes hacer una solicitud al servidor para procesar la compra
+    // y luego restablecer el carrito y los valores de contador y precio total.
+    setCartCount(0);
+    setCartItems([]);
+    setTotalPrice(0);
+    handleCloseModal();
   };
 
   return (
     <>
-      <NavBar cartCount={cartCount} />
+      <NavBar cartCount={cartCount} handleOpenModal={handleOpenModal} />
       <Carousel />
       <Banner />
       <PcRecomendadas />
@@ -27,8 +49,21 @@ function App() {
       <Cards addToCart={addToCart} />
       <Footer />
 
+      <CartModal
+        cartItems={cartItems}
+        totalPrice={totalPrice}
+        showModal={showModal}
+        handleCloseModal={handleCloseModal}
+        handleConfirmPurchase={handleConfirmPurchase}
+      />
     </>
   );
 }
 
 export default App;
+
+
+
+
+
+

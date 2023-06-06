@@ -2,7 +2,6 @@
 
 import React from 'react';
 import './CartWidget.scss';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
@@ -16,5 +15,4 @@ function CartWidget({ cartCount }) {
 }
 
 export default CartWidget;
-
 

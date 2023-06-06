@@ -9,7 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from '..//..//assets/react.svg';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-function NavBar({ cartCount }) {
+function NavBar({ cartCount, handleOpenModal }) {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const toggleSidebar = () => {
@@ -49,10 +49,10 @@ function NavBar({ cartCount }) {
           </Navbar.Collapse>
           <div className='cart__container'>
             <div>
-            <p>Mi Carrito</p>
+              <p>Mi Carrito</p>
             </div>
-            <div className='cart-widget__count' >
-            <CartWidget cartCount={cartCount} />
+            <div className='cart-widget__count' onClick={handleOpenModal}>
+              <CartWidget cartCount={cartCount} />
             </div>
           </div>
         </Container>
@@ -103,6 +103,7 @@ function NavBar({ cartCount }) {
 }
 
 export default NavBar;
+
 
 
 
