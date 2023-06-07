@@ -9,7 +9,7 @@ import pcImage3 from '..//..//assets/pcImage3.jpg'
 const pcImages = [
   {
     id: 1,
-   src: pcImage1,
+  src: pcImage1,
     alt: 'PC ALTA',
   },
   {

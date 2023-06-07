@@ -41,6 +41,6 @@ export const mockData = [
     id: 7,
     image: imagen7,
     title: "Auricular Genesis Neon 750 Rgb Black",
-    price: 21.250
+    price: 21.253
   }
 ];
