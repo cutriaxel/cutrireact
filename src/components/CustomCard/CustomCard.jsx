@@ -7,7 +7,7 @@ export const CustomCard = ({ card, addToCart }) => {
       <Card.Img className="card-img" src={card.image} alt={card.title} />
       <Card.Body>
         <Card.Title>{card.title}</Card.Title>
-        <Card.Text>{card.price}</Card.Text>
+        <Card.Text>${card.price}</Card.Text>
         <Button variant="success" onClick={() => addToCart(card)} id="center-button">
           AÑADIR
         </Button>
