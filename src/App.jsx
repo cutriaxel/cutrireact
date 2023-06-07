@@ -9,6 +9,7 @@ import PcRecomendadas from './components/PcRecomendadas/PcRecomendadas';
 import Footer from './components/Footer/Footer';
 import CartModal from './components/CartModal/CartModal';
 
+
 function App() {
   const [cartCount, setCartCount] = useState(0);
   const [cartItems, setCartItems] = useState([]);

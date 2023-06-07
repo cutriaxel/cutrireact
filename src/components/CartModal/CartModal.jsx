@@ -1,6 +1,8 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import './CartModal.scss';
+
 
 const CartModal = ({
   cartItems,
@@ -17,11 +19,12 @@ const CartModal = ({
   };
 
   return (
-    <Modal show={showModal} onHide={handleCloseModal}>
+    
+    <Modal show={showModal} onHide={handleCloseModal} >
       <Modal.Header closeButton>
         <Modal.Title>Carrito de Compras</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body >
         {cartItems.length > 0 ? (
           <div>
             {cartItems.map((item) => (
@@ -32,21 +35,22 @@ const CartModal = ({
                 <hr />
               </div>
             ))}
-            <p>Precio Total: ${calculateTotalPrice()}</p> {/* Modificación aquí */}
+            <p>Precio Total: ${calculateTotalPrice()}</p> 
           </div>
         ) : (
           <p>No hay productos en el carrito</p>
         )}
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={handleCloseModal}>
+        <Button variant="danger" onClick={handleCloseModal}>
           Seguir comprando
         </Button>
-        <Button variant="primary" onClick={handleConfirmPurchase}>
+        <Button variant="success" onClick={handleConfirmPurchase}>
           Confirmar compra
         </Button>
       </Modal.Footer>
     </Modal>
+    
   );
 };
 
