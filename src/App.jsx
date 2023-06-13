@@ -8,6 +8,7 @@ import Banner from './components/Banner/Banner';
 import PcRecomendadas from './components/PcRecomendadas/PcRecomendadas';
 import Footer from './components/Footer/Footer';
 import CartModal from './components/CartModal/CartModal';
+import {BrowserRouter} from 'react-router-dom';
 
 
 function App() {
@@ -29,16 +30,14 @@ function App() {
   };
 
   const handleConfirmPurchase = () => {
-    // Aquí puedes implementar la lógica para confirmar la compra
-    // Por ejemplo, puedes hacer una solicitud al servidor para procesar la compra
-    // y luego restablecer el carrito y el contador.
     setCartCount(0);
     setCartItems([]);
     handleCloseModal();
   };
 
   return (
-    <>
+  <BrowserRouter>
+    
       <NavBar cartCount={cartCount} handleOpenModal={handleOpenModal} />
       <Carousel />
       <Banner />
@@ -53,7 +52,8 @@ function App() {
         handleCloseModal={handleCloseModal}
         handleConfirmPurchase={handleConfirmPurchase}
       />
-    </>
+    
+  </BrowserRouter>
   );
 }
 

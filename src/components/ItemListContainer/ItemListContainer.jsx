@@ -12,7 +12,6 @@ function ItemListContainer({ nombre }) {
           <hr style={{ color: 'white'}}/>
           <a href='#action1' style={{ color: '#40a640'}} >Ver todo</a>
         </div>
-
       </div>
     </div>
   )
