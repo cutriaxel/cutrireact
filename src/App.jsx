@@ -42,7 +42,6 @@ function App() {
       <PcRecomendadas />
       <ItemListContainer nombre="Productos" addToCart={addToCart} />
       <Footer />
-
       <CartModal
         cartItems={cartItems}
         showModal={showModal}
