@@ -8,8 +8,7 @@ import Banner from './components/Banner/Banner';
 import PcRecomendadas from './components/PcRecomendadas/PcRecomendadas';
 import Footer from './components/Footer/Footer';
 import CartModal from './components/CartModal/CartModal';
-import {BrowserRouter} from 'react-router-dom';
-
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
@@ -17,8 +16,8 @@ function App() {
   const [showModal, setShowModal] = useState(false);
 
   const addToCart = (item) => {
-    setCartCount(prevCount => prevCount + 1);
-    setCartItems(prevItems => [...prevItems, item]);
+    setCartCount((prevCount) => prevCount + 1);
+    setCartItems((prevItems) => [...prevItems, item]);
   };
 
   const handleOpenModal = () => {
@@ -36,14 +35,12 @@ function App() {
   };
 
   return (
-  <BrowserRouter>
-    
+    <BrowserRouter>
       <NavBar cartCount={cartCount} handleOpenModal={handleOpenModal} />
       <Carousel />
       <Banner />
       <PcRecomendadas />
-      <ItemListContainer nombre="Productos" />
-      <Cards addToCart={addToCart} />
+      <ItemListContainer nombre="Productos" addToCart={addToCart} />
       <Footer />
 
       <CartModal
@@ -52,12 +49,12 @@ function App() {
         handleCloseModal={handleCloseModal}
         handleConfirmPurchase={handleConfirmPurchase}
       />
-    
-  </BrowserRouter>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
 
 
 
