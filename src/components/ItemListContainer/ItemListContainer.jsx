@@ -1,11 +1,16 @@
 import React from 'react';
 import './ItemListContainer.scss';
 import Cards from '../Cards/Cards';
-
+import Carousel from '../Carousel/Carousel';
+import Banner from '../Banner/Banner';
+import PcRecomendadas from '../PcRecomendadas/PcRecomendadas';
 
 function ItemListContainer({ nombre, addToCart }) {
   return (
     <>
+      <Carousel />
+      <Banner />
+      <PcRecomendadas />
       <div className="container__principal">
         <div className="list__container">
           <div>
