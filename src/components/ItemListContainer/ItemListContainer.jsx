@@ -24,7 +24,7 @@ function ItemListContainer({ nombre, addToCart }) {
           </div>
         </div>
       </div>
-      <div>
+      <div >
         <Cards addToCart={addToCart} />
       </div>
     </>

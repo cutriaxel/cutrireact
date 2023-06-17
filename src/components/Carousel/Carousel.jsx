@@ -22,6 +22,7 @@ const carouselItems = [
 
 function Carousel() {
   return (
+    
     <BootstrapCarousel className="custom-carousel">
       {carouselItems.map((item, index) => (
         <BootstrapCarousel.Item key={index}>
@@ -29,6 +30,7 @@ function Carousel() {
         </BootstrapCarousel.Item>
       ))}
     </BootstrapCarousel>
+    
   );
 }
 
