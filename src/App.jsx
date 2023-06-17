@@ -37,6 +37,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<ItemListContainer nombre="Productos" addToCart={addToCart} />} />
+        <Route path="/" element={<ItemListContainer nombre="Productos" addToCart={addToCart} />} />
         <Route path="/Productos" element={<Productos addToCart={addToCart}  />} />
       </Routes>
 

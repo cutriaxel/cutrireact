@@ -8,6 +8,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '..//..//assets/react.svg';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function NavBar({ cartCount, handleOpenModal }) {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -30,9 +31,9 @@ function NavBar({ cartCount, handleOpenModal }) {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link className='nav__link' href="#action1" style={{ color: 'white'}}>Inicio</Nav.Link>
-              <Nav.Link className='nav__link' href="#action2" style={{ color: 'white' }}>Productos</Nav.Link>
-              <Nav.Link className='nav__link' href="#action1" style={{ color: 'white' }}>Contacto</Nav.Link>
+              <Link className='nav__link'  style={{ color: 'white'}} to={"/"} >Inicio</Link>
+              <Link className='nav__link'  style={{ color: 'white' }} to={"/Productos"} >Productos</Link>
+              <Link className='nav__link'  style={{ color: 'white' }} to={"/Contacto"} >Contacto</Link>
             </Nav>
 
             <div className='form__container'>

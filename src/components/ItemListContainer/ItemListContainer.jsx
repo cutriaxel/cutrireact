@@ -4,6 +4,8 @@ import Cards from '../Cards/Cards';
 import Carousel from '../Carousel/Carousel';
 import Banner from '../Banner/Banner';
 import PcRecomendadas from '../PcRecomendadas/PcRecomendadas';
+import { useParams } from 'react-router-dom';
+
 
 function ItemListContainer({ nombre, addToCart }) {
   return (
@@ -18,7 +20,7 @@ function ItemListContainer({ nombre, addToCart }) {
               {nombre} <strong>Destacados</strong>{' '}
             </h5>
             <hr style={{ color: 'white' }} />
-            <a href="#action1" style={{ color: '#40a640' }}>
+           <a href="#action1" style={{ color: '#40a640' }}>
               Ver todo
             </a>
           </div>
