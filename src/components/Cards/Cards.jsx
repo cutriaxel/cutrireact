@@ -11,10 +11,12 @@ const Cards = ({ addToCart }) => {
   }, []);
 
   return (
+    <div className="principal-card">
     <div className="card-container">
       {cardData.map((card) => (
         <CustomCard card={card} key={card.id} addToCart={addToCart} />
       ))}
+    </div>
     </div>
   );
 };
