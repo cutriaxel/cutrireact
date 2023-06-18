@@ -1,15 +1,18 @@
-import { mockData } from "../data/MOCK_DATA.JS";
+import { useEffect, useState } from "react";
+import { pedirDatos } from "../helpers/PedirDatos.js";
 
+export const useFetchData = () => {
+  const [cardData, setCardData] = useState([]);
 
+  useEffect(() => {
+    pedirDatos()
+      .then((data) => {
+        setCardData(data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
 
-export const fetchData = async (setCardData) => {
-
-  // Simulando un retraso de red de 2 segundos
-  await new Promise((resolve) => setTimeout(resolve, 2000));
-
-  // Datos del mock
-
-
-  setCardData(mockData);
-
+  return cardData;
 };

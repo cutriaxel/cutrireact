@@ -5,5 +5,7 @@ import imagen4 from '..//assets/imagen4.jpg';
 import imagen5 from '..//assets/imagen5.jpg';
 import imagen6 from '..//assets/imagen6.jpg';
 import imagen7 from '..//assets/imagen7.jpg';
+import imagen8 from '..//assets/imagen8.jpg';
+import imagen9 from '..//assets/imagen9.jpg';
 
-export {imagen1, imagen2,imagen3,imagen4,imagen5,imagen6, imagen7,}
+export {imagen1, imagen2,imagen3,imagen4,imagen5,imagen6, imagen7, imagen8, imagen9,}

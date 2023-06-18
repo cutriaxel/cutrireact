@@ -1,4 +1,4 @@
-import { imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7 } from "../helpers/Index";
+import { imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, imagen9 } from "../helpers/Index";
 
 export const mockData = [
   {
@@ -49,5 +49,21 @@ export const mockData = [
     "title": "Auricular Genesis Neon 750 Rgb Black",
     "price": 21253,
     "category": "Auriculares"
-  }
+  },
+  {
+    "id": 8,
+    "image": imagen8,
+    "title": "PC  Armada Completa Ryzen 5 4600G 16GB 480GB",
+    "price": 204357,
+    "category": "Computadoras"
+  },
+  {
+    "id": 9,
+    "image": imagen9,
+    "title": "Monitor LED TN 22 Asus VP228HE-J FHD 1ms",
+    "price": 67189,
+    "category": "Monitores"
+  },
+  
 ]
+
