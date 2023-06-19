@@ -79,7 +79,7 @@ function NavBar({ cartCount, handleOpenModal }) {
            <li><Link className='nav__link'   to={"/productos/Monitores"} >Monitores</Link></li> 
            <li> <Link className='nav__link'   to={"/productos/Procesadores"} >Procesadores</Link></li>
             <li><Link className='nav__link'   to={"/productos/Perifericos"} >Perifericos</Link></li>
-           <li> <Link className='nav__link'   to={"/producots/combos"} >Notebooks</Link></li>
+           <li> <Link className='nav__link'   to={"/productos"} >Notebooks</Link></li>
             </ul>
           </div>
         )}

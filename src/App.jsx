@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { FilteredProducts } from './components/Productos/FilteredProducts';
 import Productos from './components/Productos/Productos';
 
+
 function App() {
   const [cartCount, setCartCount] = useState(0);
   const [cartItems, setCartItems] = useState([]);

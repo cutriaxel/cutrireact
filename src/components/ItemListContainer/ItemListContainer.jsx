@@ -4,9 +4,7 @@ import Carousel from '../Carousel/Carousel';
 import Banner from '../Banner/Banner';
 import PcRecomendadas from '../PcRecomendadas/PcRecomendadas';
 import { Link } from 'react-router-dom';
-import Productos from '../Productos/Productos';
-import Cards from '../Cards/Cards';
-
+import Slider from '../Slider/Slider';
 
 function ItemListContainer({ nombre, addToCart }) {
   return (
@@ -27,9 +25,9 @@ function ItemListContainer({ nombre, addToCart }) {
           </div>
         </div>
       </div>
-      <div >
-        <Productos/>
-      </div>
+    
+        <Slider />
+      
     </>
   );
 }
