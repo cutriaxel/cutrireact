@@ -1,10 +1,11 @@
 import React from 'react';
 import './ItemListContainer.scss';
-import Cards from '../Cards/Cards';
 import Carousel from '../Carousel/Carousel';
 import Banner from '../Banner/Banner';
 import PcRecomendadas from '../PcRecomendadas/PcRecomendadas';
 import { Link } from 'react-router-dom';
+import Productos from '../Productos/Productos';
+import Cards from '../Cards/Cards';
 
 
 function ItemListContainer({ nombre, addToCart }) {
@@ -27,7 +28,7 @@ function ItemListContainer({ nombre, addToCart }) {
         </div>
       </div>
       <div >
-        <Cards addToCart={addToCart} />
+        <Productos/>
       </div>
     </>
   );

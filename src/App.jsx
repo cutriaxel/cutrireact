@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import NavBar from './components/Header/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Productos from './components/Productos/Productos';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer/Footer';
 import CartModal from './components/CartModal/CartModal';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { FilteredProducts } from './components/Productos/FilteredProducts';
+import Productos from './components/Productos/Productos';
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
@@ -37,7 +38,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<ItemListContainer nombre="Productos" addToCart={addToCart} />} />
-        <Route path="/Productos" element={<Productos addToCart={addToCart}  />} />
+       <Route path="/productos" element={<Productos nombre="Productos" addToCart={addToCart} />} />
+        <Route path="/productos/:productoId" element={<FilteredProducts addToCart={addToCart}  />} />
       </Routes>
       
       <Footer />

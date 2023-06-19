@@ -1,18 +1,38 @@
-import React from "react";
-import './Cards.scss';
-import { useFetchData } from "../../helpers/FetchData";
-import { CustomCard } from '..//CustomCard/CustomCard';
+import React, { useEffect, useState } from "react";
+import { CustomCard } from "..//CustomCard/CustomCard";
+
+import "./Cards.scss";
+import { pedirDatos } from "../../helpers/PedirDatos";
+import { useParams } from "react-router-dom";
 
 const Cards = ({ addToCart }) => {
-  const cardData = useFetchData();
+  const [loading, setLoading] = useState(true);
+  const [items, setItems] = useState([]);
 
+
+  const { productoId } = useParams();
+  useEffect(() => {
+    pedirDatos()
+      .then((res) => {
+        const filtered = res.filter(prod => prod.category === productoId)
+        setItems(filtered)
+        })
+        .catch((err) => console.log(err))
+        .finally(() => {
+        setLoading(false);
+      });
+  }, []);
   return (
     <div className="principal-card">
-      <div className="card-container">
-        {cardData.map((card) => (
-          <CustomCard card={card} key={card.id} addToCart={addToCart} />
-        ))}
-      </div>
+      {loading ? (
+        <h2>Cargando Productos</h2>
+      ) : (
+        <div className="card-container">
+          {items.map((card) => (
+            <CustomCard card={card} key={card.id} addToCart={addToCart} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

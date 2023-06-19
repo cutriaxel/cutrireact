@@ -1,69 +1,65 @@
-import { imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, imagen9 } from "../helpers/Index";
-
-export const mockData = [
+[
   {
     "id": 1,
-    "image": imagen1,
+    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/100-100000263BOX_800.jpg",
     "title": "Micro Amd Ryzen 7 5700g 4.6 Ghz Am4",
-    "price": 155255,
+    "price": 155257,
     "category": "Procesadores"
   },
   {
     "id": 2,
-    "image": imagen2,
+    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/BX8070811900K_800.jpg",
     "title": "Micro Intel I9-11700kf 5.0ghz 16mb s.1200",
     "price": 221674,
     "category": "Procesadores"
   },
   {
     "id": 3,
-    "image": imagen3,
+    "image": "https://www.deffo.com.ar/wp-content/uploads/2023/04/Ryzen-9-Series-7000-X-2.webp",
     "title": "Micro Amd Ryzen 9 5900x 4.8 Ghz Am4",
     "price": 298315,
     "category": "Procesadores"
   },
   {
     "id": 4,
-    "image": imagen4,
+    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/241V8L-77_800.jpg",
     "title": "Monitor LED CURVO 24 Samsung",
     "price": 108823,
     "category": "Monitores"
   },
   {
     "id": 5,
-    "image": imagen5,
+    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/NFG-0784_800.jpg",
     "title": "Silla Gamer Genesis RGB Black",
     "price": 134999,
     "category": "Sillas"
   },
   {
     "id": 6,
-    "image": imagen6,
+    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/K552-BB-SP_800.jpg",
     "title": "Fury Thunderstreak Combo",
     "price": 11834,
     "category": "Combos"
   },
   {
     "id": 7,
-    "image": imagen7,
+    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/6950376783431_600.jpg",
     "title": "Auricular Genesis Neon 750 Rgb Black",
     "price": 21253,
-    "category": "Auriculares"
+    "category": "Perifericos"
   },
   {
     "id": 8,
-    "image": imagen8,
+    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/PC-Armada-Alta-2019_600.jpg",
     "title": "PC  Armada Completa Ryzen 5 4600G 16GB 480GB",
     "price": 204357,
     "category": "Computadoras"
   },
   {
     "id": 9,
-    "image": imagen9,
+    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/LG19M38A-B_800.jpg",
     "title": "Monitor LED TN 22 Asus VP228HE-J FHD 1ms",
     "price": 67189,
     "category": "Monitores"
-  },
-  
+  }
 ]
-
