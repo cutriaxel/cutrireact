@@ -8,15 +8,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { FilteredProducts } from './components/Productos/FilteredProducts';
 import Productos from './components/Productos/Productos';
 
-
 function App() {
   const [cartCount, setCartCount] = useState(0);
   const [cartItems, setCartItems] = useState([]);
   const [showModal, setShowModal] = useState(false);
 
   const addToCart = (item) => {
-    setCartCount((prevCount) => prevCount + 1);
     setCartItems((prevItems) => [...prevItems, item]);
+    setCartCount((prevCount) => prevCount + 1);
   };
 
   const handleOpenModal = () => {
@@ -33,29 +32,39 @@ function App() {
     handleCloseModal();
   };
 
+  const handleRemoveItem = (itemId) => {
+    const indexToRemove = cartItems.findIndex((item) => item.id === itemId);
+    if (indexToRemove !== -1) {
+      const updatedItems = [...cartItems];
+      updatedItems.splice(indexToRemove, 1);
+      setCartItems(updatedItems);
+      setCartCount((prevCount) => prevCount - 1);
+    }
+  };
+
   return (
     <BrowserRouter>
       <NavBar cartCount={cartCount} handleOpenModal={handleOpenModal} />
 
       <Routes>
         <Route path="/" element={<ItemListContainer nombre="Productos" addToCart={addToCart} />} />
-       <Route path="/productos" element={<Productos nombre="Productos" addToCart={addToCart} />} />
-        <Route path="/productos/:productoId" element={<FilteredProducts addToCart={addToCart}  />} />
+        <Route path="/productos" element={<Productos nombre="Productos" addToCart={addToCart} />} />
+        <Route path="/productos/:productoId" element={<FilteredProducts addToCart={addToCart} />} />
       </Routes>
-      
+
       <Footer />
       <CartModal
         cartItems={cartItems}
         showModal={showModal}
         handleCloseModal={handleCloseModal}
         handleConfirmPurchase={handleConfirmPurchase}
+        handleRemoveItem={handleRemoveItem}
       />
     </BrowserRouter>
   );
 }
 
 export default App;
-
 
 
 
