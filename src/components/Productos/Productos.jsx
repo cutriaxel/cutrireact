@@ -3,6 +3,7 @@ import "./Productos.scss";
 import { useFetchData } from "../../helpers/FetchData";
 import { pedirDatos } from "../../helpers/PedirDatos";
 import { CustomCard } from "../CustomCard/CustomCard";
+import { FadeLoader } from "react-spinners";
 
 
 const Productos = ({ addToCart }) => {
@@ -30,7 +31,9 @@ const Productos = ({ addToCart }) => {
      
 
       {loading ? (
-        <h1>Cargando Productos</h1>
+        <div className="loading-spinner">
+        <FadeLoader color="#01f603" loading={loading} size={35} />
+      </div>
       ) : (
         <div className="card-container">
           {cardData.map((card) => (

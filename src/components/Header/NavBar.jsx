@@ -73,7 +73,7 @@ function NavBar({ cartCount, handleOpenModal }) {
         {showSidebar && (
           <div className="sidebar">
             <ul className="sidebar__list">
-            <li><Link className='nav__link'   to={"/"} >ARMA TU PC</Link></li>
+            <li><Link className='nav__link'   to={"/productos/Computadoras"} >ARMA TU PC</Link></li>
             <li><Link className='nav__link'   to={"/"} >ARMA TU COMBO</Link></li>
             <hr  style={{ color: 'white' }} />
            <li><Link className='nav__link'   to={"/productos/Monitores"} >Monitores</Link></li> 
