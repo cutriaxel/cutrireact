@@ -4,6 +4,7 @@ import { CustomCard } from "..//CustomCard/CustomCard";
 import "./Cards.scss";
 import { pedirDatos } from "../../helpers/PedirDatos";
 import { useParams } from "react-router-dom";
+import { FadeLoader } from "react-spinners";
 
 const Cards = ({ addToCart }) => {
   const [loading, setLoading] = useState(true);
@@ -25,7 +26,9 @@ const Cards = ({ addToCart }) => {
   return (
     <div className="principal-card">
       {loading ? (
-        <h2>Cargando Productos</h2>
+      <div className="loading-spinner">
+        <FadeLoader color="#01f603" loading={loading} size={35} />
+      </div>
       ) : (
         <div className="card-container">
           {items.map((card) => (
