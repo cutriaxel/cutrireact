@@ -31,9 +31,9 @@ function NavBar({ cartCount, handleOpenModal }) {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Link className='nav__link'  style={{ color: 'white'}} to={"/"} >Inicio</Link>
-              <Link className='nav__link'  style={{ color: 'white' }} to={"/productos"} >Productos</Link>
-              <Link className='nav__link'  style={{ color: 'white' }} to={"/contacto"} >Contacto</Link>
+              <Link className='nav__link' style={{ color: 'white' }} to={"/"} >Inicio</Link>
+              <Link className='nav__link' style={{ color: 'white' }} to={"/productos"} >Productos</Link>
+              <Link className='nav__link' style={{ color: 'white' }} to={"/contacto"} >Contacto</Link>
             </Nav>
 
             <div className='form__container'>
@@ -65,7 +65,7 @@ function NavBar({ cartCount, handleOpenModal }) {
             {showSidebar ? (
               <FaTimes color="white" onClick={toggleSidebar} size={24} />
             ) : (
-              <FaBars color="white" onClick={toggleSidebar}  size={24} />
+              <FaBars color="white" onClick={toggleSidebar} size={24} />
             )}
             <span className="sidebar__text">BÚSQUEDA POR CATEGORÍA</span>
           </div>
@@ -73,13 +73,13 @@ function NavBar({ cartCount, handleOpenModal }) {
         {showSidebar && (
           <div className="sidebar">
             <ul className="sidebar__list">
-            <li><Link className='nav__link'   to={"/productos/Computadoras"} >ARMA TU PC</Link></li>
-            <li><Link className='nav__link'   to={"/"} >ARMA TU COMBO</Link></li>
-            <hr  style={{ color: 'white' }} />
-           <li><Link className='nav__link'   to={"/productos/Monitores"} >Monitores</Link></li> 
-           <li> <Link className='nav__link'   to={"/productos/Procesadores"} >Procesadores</Link></li>
-            <li><Link className='nav__link'   to={"/productos/Perifericos"} >Perifericos</Link></li>
-           <li> <Link className='nav__link'   to={"/productos"} >Notebooks</Link></li>
+              <li><Link className='nav__link' to={"/productos/Computadoras"} >ARMA TU PC</Link></li>
+              <li><Link className='nav__link' to={"/"} >ARMA TU COMBO</Link></li>
+              <hr style={{ color: 'white' }} />
+              <li><Link className='nav__link' to={"/productos/Monitores"} >Monitores</Link></li>
+              <li> <Link className='nav__link' to={"/productos/Procesadores"} >Procesadores</Link></li>
+              <li><Link className='nav__link' to={"/productos/Perifericos"} >Perifericos</Link></li>
+              <li> <Link className='nav__link' to={"/productos"} >Notebooks</Link></li>
             </ul>
           </div>
         )}
