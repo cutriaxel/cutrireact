@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import './Contacto.scss'; // Archivo de estilos personalizados
+import './Contacto.scss';
 
 function Contacto() {
   return (

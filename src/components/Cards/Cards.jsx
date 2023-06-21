@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { CustomCard } from "..//CustomCard/CustomCard";
-
 import "./Cards.scss";
 import { pedirDatos } from "../../helpers/PedirDatos";
 import { useParams } from "react-router-dom";
