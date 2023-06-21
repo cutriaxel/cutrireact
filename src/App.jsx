@@ -7,6 +7,7 @@ import CartModal from './components/CartModal/CartModal';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { FilteredProducts } from './components/Productos/FilteredProducts';
 import Productos from './components/Productos/Productos';
+import Contacto from './components/Contacto/Contacto';
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
@@ -48,8 +49,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<ItemListContainer nombre="Productos" addToCart={addToCart} />} />
-        <Route path="/productos" element={<Productos nombre="Productos" addToCart={addToCart} />} />
+        <Route path="/productos" element={<Productos addToCart={addToCart} />} />
         <Route path="/productos/:productoId" element={<FilteredProducts addToCart={addToCart} />} />
+        <Route path="/Contacto" element={<Contacto nombre="Contacto" addToCart={addToCart} />} />
+        
       </Routes>
 
       <Footer />
