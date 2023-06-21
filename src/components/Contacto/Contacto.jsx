@@ -1,44 +1,61 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import './Contacto.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faPhone, faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
 
-function Contacto() {
+const Contacto = () => {
   return (
-    <Container className="contacto-container">
-      <Row>
-        <Col md={3}>
-          <p className="contacto-info">Información de contacto:</p>
-          <ul className="contacto-lista">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
-        </Col>
-        <Col md={5}>
-          <Form className="contacto-form">
-            <Form.Group>
-              <Form.Label className="contacto-label">Label 1</Form.Label>
-              <Form.Control type="text" className="contacto-input" />
-            </Form.Group>
-            <Form.Group>
-              <Form.Label className="contacto-label">Label 2</Form.Label>
-              <Form.Control type="text" className="contacto-input" />
-            </Form.Group>
-            <Form.Group>
-              <Form.Label className="contacto-label">Label 3</Form.Label>
-              <Form.Control type="text" className="contacto-input" />
-            </Form.Group>
-            <Form.Group>
-              <Form.Label className="contacto-label">Label 4</Form.Label>
-              <Form.Control type="text" className="contacto-input" />
-            </Form.Group>
-            <Button variant="primary" className="contacto-button">Enviar</Button>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
-  );
-}
 
+<>
+<div className='name'><h1> Contacto </h1></div>
+    <div className="content">
+      
+
+      <div className="contact-wrapper animated bounceInUp">
+        <div className="contact-form">
+          <h3>Datos Personales</h3>
+          <form action="">
+            <p>
+              <label>Nombre y Apellido</label>
+              <input type="text" name="fullname" />
+            </p>
+            <p>
+              <label>Correo electronico</label>
+              <input type="email" name="email" />
+            </p>
+            <p>
+              <label>Numero de telefono</label>
+              <input type="tel" name="phone" />
+            </p>
+            <p>
+              <label>Pais</label>
+              <input type="text" name="affair" />
+            </p>
+            <p className="block">
+              <label>Mensaje</label>
+              <textarea name="message" rows="3"></textarea>
+            </p>
+            <p className="block">
+              <button>
+                Enviar 
+              </button>
+            </p>
+          </form>
+        </div>
+        <div className="contact-info">
+          <h4>Nosotros</h4>
+          <ul>
+          <li><FontAwesomeIcon icon={faMapMarkerAlt} /> Florida 537 PB, Local 379 Microcentro (CABA)</li>
+          <li><FontAwesomeIcon icon={faPhone} /> (011) +54 5833-7022</li>
+          <li><FontAwesomeIcon icon={faEnvelopeOpenText} /> cutritech@hotmail.com</li>
+          </ul>
+          <p>De Lunes a Viernes de 9hs a 18hs , Sabado 10 a 14:30hs</p>
+        </div>
+      </div>
+
+    </div>
+    </>
+  );
+};
 export default Contacto;
