@@ -10,6 +10,7 @@ import logo from '..//..//assets/react.svg';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+
 function NavBar({ cartCount, handleOpenModal }) {
   const [showSidebar, setShowSidebar] = useState(false);
 

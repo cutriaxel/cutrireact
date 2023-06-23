@@ -35,7 +35,7 @@ const Productos = ({ addToCart }) => {
           <div className="card-container">
             {cardData.map((card) => (
               <Link
-                to={`/productos/${card.category}`}
+
                 key={card.id}
                 className="custom-card-link"
               >

@@ -11,6 +11,7 @@ export const CustomCard = ({ card, addToCart }) => {
         <Button variant="success" onClick={() => addToCart(card)} id="center-button">
           AÑADIR
         </Button>
+        
       </Card.Body>
     </Card>
   )

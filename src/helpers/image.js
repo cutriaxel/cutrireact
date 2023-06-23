@@ -7,4 +7,5 @@ import image6 from '../assets/imagen6.jpg'
 import image8 from '../assets/imagen8.jpg'
 import imagen9 from '../assets/imagen9.jpg'
 
+
 export default [image1,image2,image3,image4,image5,image6, image8, imagen9]
