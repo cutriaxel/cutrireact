@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/Header/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer/Footer';
 import CartModal from './components/CartModal/CartModal';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import  FilteredProducts  from './components/Productos/FilteredProducts';
+import FilteredProducts  from './components/Productos/FilteredProducts';
 import Productos from './components/Productos/Productos';
 import Contacto from './components/Contacto/Contacto';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 
 function App() {
   const [cartCount, setCartCount] = useState(0);

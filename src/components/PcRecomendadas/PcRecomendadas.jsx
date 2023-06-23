@@ -36,7 +36,7 @@ function PcRecomendadas() {
           <div className="pc__item" key={image.id}>
             <Link to={"/productos/Computadoras"}>
             <img src={image.src} alt={image.alt} className="pc__image" />
-             </Link>
+            </Link>
           </div>
         ))}
       </div>

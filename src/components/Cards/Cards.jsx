@@ -26,7 +26,7 @@ const Cards = ({ addToCart }) => {
     <div className="principal-card">
       {loading ? (
         <div className="loading-spinner">
-          <FadeLoader color="#01f603" loading={loading} size={35} />
+          <FadeLoader color="#01f603" loading={loading} size={45} />
         </div>
       ) : (
         <div className="card-container">
