@@ -7,6 +7,7 @@ import CartModal from './components/CartModal/CartModal';
 import FilteredProducts  from './components/Productos/FilteredProducts';
 import Productos from './components/Productos/Productos';
 import Contacto from './components/Contacto/Contacto';
+import {ItemDetail} from './components/ItemDetail/ItemDetail'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
@@ -15,23 +16,18 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
   const [showModal, setShowModal] = useState(false);
 
-  const addToCart = (item) => {
+   const addToCart = (item) => {
     setCartItems((prevItems) => [...prevItems, item]);
     setCartCount((prevCount) => prevCount + 1);
   };
 
-  const handleOpenModal = () => {
-    setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
+  const handleModal = () => {
+    setShowModal(!showModal);
   };
 
   const handleConfirmPurchase = () => {
     setCartCount(0);
     setCartItems([]);
-    handleCloseModal();
   };
 
   const handleRemoveItem = (itemId) => {
@@ -46,13 +42,14 @@ function App() {
 
   return (
     <BrowserRouter>
-      <NavBar cartCount={cartCount} handleOpenModal={handleOpenModal} />
+      <NavBar cartCount={cartCount} handleOpenModal={handleModal} />
 
       <Routes>
         <Route path="/" element={<ItemListContainer nombre="Productos" addToCart={addToCart} />} />
         <Route path="/productos" element={<Productos addToCart={addToCart} />} />
         <Route path="/productos/:productoId" element={<FilteredProducts addToCart={addToCart} />} />
-        <Route path="/Contacto" element={<Contacto nombre="Contacto" addToCart={addToCart} />} />
+        <Route path="/Contacto" element={<Contacto  />} />
+        <Route path="/itemDetail" element={<ItemDetail addToCart={addToCart}/>} />
         
       </Routes>
 
@@ -60,7 +57,7 @@ function App() {
       <CartModal
         cartItems={cartItems}
         showModal={showModal}
-        handleCloseModal={handleCloseModal}
+        handleCloseModal={handleModal}
         handleConfirmPurchase={handleConfirmPurchase}
         handleRemoveItem={handleRemoveItem}
       />
