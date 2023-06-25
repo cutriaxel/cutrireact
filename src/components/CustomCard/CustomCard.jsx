@@ -11,20 +11,15 @@ export const CustomCard = ({ card, addToCart }) => {
       <Card.Body>
         <Card.Title>{card.title}</Card.Title>
         <Card.Text>${card.price}</Card.Text>
+        <div className='container_detalle'>
+          <Link style={{ textDecoration: 'none' }} className='detalle_card' to="/itemDetail" state={{ card: card }}  >
+            Ver detalle
+          </Link>
+        </div>
         <Button variant="success" onClick={() => addToCart(card)} id="center-button">
           AÑADIR
         </Button>
-        {/* <Button variant="success" id="center-button"> */}
-        <ul>
-          <li>
-            <Link className='nav__link' to="/itemDetail" state={{card: card}} >
-            DETALLE
-          </Link>
-        </li>
-      </ul>
-      {/* </Button> */}
-
-    </Card.Body>
+      </Card.Body>
     </Card >
   )
 }

@@ -79,3 +79,23 @@
   }
 }
 
+
+.detalle_card  {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Cambria, serif;
+  color: green;
+  
+}
+
+.detalle_card a {
+  display: flex;
+  justify-content: center ;
+  justify-items: center;
+  
+}
+
+.container_detalle {
+  margin-bottom: 8px;
+}
+

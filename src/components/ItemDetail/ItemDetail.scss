@@ -1,0 +1,63 @@
+.principal-detail {
+  display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    
+}
+
+.item-detail-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px;
+  align-items: center;
+}
+
+.img_container img {
+  height: 450px;
+  width: 500px;
+}
+
+.img_container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.item-detail-info h2 {
+  color: white;
+  font-size: 40px;
+
+}
+
+.item-detail-description {
+  color: white;
+  margin-top: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  width: 75%;
+  line-height: 30px;
+}
+
+.item-detail-price {
+  color: #00e602;
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.item-detail-final {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.item-detail-button {
+  background-color: #7200ff;
+  border-color: #7200ff;
+}
+
+.item-detail-button:hover {
+  background-color: #7200ff;
+  border-color: #7200ff;
+}
+

@@ -1,20 +1,27 @@
-import React from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import React from 'react';
+import './ItemDetail.scss';
+import { Button } from "react-bootstrap";
+import { useLocation } from 'react-router-dom';
 
-export const ItemDetail = ({addToCart}) => {
-let {state} = useLocation()
-  console.log(state);
+export const ItemDetail = ({ addToCart }) => {
+  const { state } = useLocation();
+
   return (
-    <div style={{display: "flex", padding: "12rem"}}>
-      <img src={state.card.image} style={{height: "300px"}}/>
-      <div style={{marginTop: "10%"}}>
-        <h2 style={{color: "#fff"}}>{state.card.title}</h2>
-        <p>{state.card.category}</p>
-        <p>{state.card.price}</p>
+    <div className='principal-detail'>
+    <div className="item-detail-container">
+      <div className='img_container'>
+      <img src={state.card.image} className="item-detail-image" alt={state.card.title} />
       </div>
-      <button onClick={() => addToCart(state.card)}>
-        AGREGAR
-        </button>
+      <div className="item-detail-info">
+        <h2 className="item-detail-title">{state.card.title}</h2>
+        <p className="item-detail-description">{state.card.description}</p>
+        <h3 className='item-detail-final'>Precio final:</h3>
+        <p className="item-detail-price">${state.card.price}</p>
+        <Button className="item-detail-button" onClick={() => addToCart(state.card)}>
+          AGREGAR
+        </Button>
+      </div>
     </div>
-  )
-}
+    </div>
+  );
+};
