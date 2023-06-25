@@ -1,5 +1,7 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import Button from 'react-bootstrap/Button';
 import './CartModal.scss';
 
@@ -39,7 +41,7 @@ const CartModal = ({
                   <div className="item-container">
                     <img src={item.image} alt={item.title} width="100" height="100" />
                     <Button style={{ marginLeft: '30px' }} variant="danger" onClick={() => handleItemClick(item.id, index)}>
-                      Eliminar
+                      <FontAwesomeIcon icon={faTrash} />
                     </Button>
                   </div>
                   <p>Precio: ${item.price}</p>

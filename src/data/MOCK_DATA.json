@@ -44,7 +44,7 @@
     "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/K552-BB-SP_800.jpg",
     "title": "Fury Thunderstreak Combo",
     "price": 11834,
-    "category": "Combos",
+    "category": "Perifericos",
     "description": "El Fury Thunderstreak Combo es una excelente opción para aquellos que buscan un conjunto de teclado y mouse confiables y de alto rendimiento. Tanto el teclado como el mouse están diseñados para adaptarse a las necesidades de los jugadores, brindando un control preciso, comodidad y estilo durante tus sesiones de juego. Con su diseño robusto y funciones avanzadas, el Fury Thunderstreak Combo te ayudará a llevar tu experiencia de juego al siguiente nivel."
   },
   {
@@ -70,5 +70,34 @@
     "price": 67189,
     "category": "Monitores",
     "description": "El monitor LED TN 22 Asus VP228HE-J FHD 1ms ofrece una experiencia visual impresionante con su pantalla Full HD y un tiempo de respuesta de 1 ms. Es una excelente opción para aquellos que buscan un monitor compacto pero potente, con una rápida respuesta y una calidad de imagen impresionante. Ya sea para jugar, trabajar o ver contenido multimedia, este monitor te brindará una experiencia visual envolvente y de alta calidad."
+  },
+
+  {
+    "id": 10,
+    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/PC-Armada-Alta-0056_800.jpg",
+    "title": "PC Intel Core I5 11400F - 16GB - 512GB NVME - RTX 3060 - WIFI",
+    "price": 579853,
+    "category": "Computadoras",
+    "description": "La PC con el procesador Intel Core i5 11400F, 16GB de RAM, 512GB NVMe y la tarjeta gráfica RTX 3060 ofrece un rendimiento potente y una experiencia de juego inmersiva. El procesador Intel Core i5 11400F cuenta con 6 núcleos y 12 hilos, ofreciendo un excelente rendimiento en aplicaciones y juegos. Su frecuencia base de 2.6GHz y frecuencia turbo de hasta 4.4GHz garantizan una ejecución rápida y fluida de tareas intensivas."
+  },
+
+  {
+    "id": 11,
+    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/PC-Armada-Alta-0005_800.jpg",
+    "title": "PC AMD Ryzen 5 5600X - 16GB - 512GB NVME - RTX 2060",
+    "price": 619853,
+    "category": "Computadoras",
+    "description": "La PC con el procesador AMD Ryzen 5 5600X, 16GB de RAM, 512GB NVMe y la tarjeta gráfica RTX 2060 ofrece un rendimiento excepcional para juegos y tareas exigentes. El procesador AMD Ryzen 5 5600X cuenta con 6 núcleos y 12 hilos, ofreciendo un rendimiento rápido y eficiente. Su frecuencia base de 3.7GHz y frecuencia turbo de hasta 4.6GHz garantizan una experiencia fluida y sin interrupciones. Con la tarjeta gráfica RTX 2060, disfrutarás de gráficos de alta calidad y un rendimiento visual impresionante. Esta PC es perfecta para los jugadores y creadores de contenido que buscan potencia y rendimiento en un solo paquete."
+  },
+
+  {
+    "id": 12,
+    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/910-005795_600.jpg",
+    "title": "Mouse Logitech G203 Lightsync Azul - GAMER RGB",
+    "price": 13844,
+    "category": "Perifericos",
+    "description": "El mouse Logitech G203 Lightsync Azul es una excelente opción para los jugadores que buscan precisión y comodidad. Cuenta con un sensor óptico avanzado que proporciona un seguimiento preciso del movimiento, permitiéndote realizar movimientos rápidos y precisos en tus juegos favoritos. Su diseño ergonómico se adapta cómodamente a tu mano, brindando comodidad incluso durante largas sesiones de juego. Además, el mouse cuenta con iluminación RGB personalizable, lo que te permite personalizar el aspecto visual según tus preferencias. Con el Logitech G203 Lightsync Azul, estarás listo para llevar tu experiencia de juego al siguiente nivel."
   }
+
+  
 ]
