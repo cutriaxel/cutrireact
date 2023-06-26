@@ -7,11 +7,12 @@ import CartModal from './components/CartModal/CartModal';
 import FilteredProducts  from './components/Productos/FilteredProducts';
 import Productos from './components/Productos/Productos';
 import Contacto from './components/Contacto/Contacto';
-import {ItemDetail} from './components/ItemDetail/ItemDetail'
+import {ItemDetail} from './components/ItemDetail/ItemDetail';
+import WhatsApp from './components/WhatsApp/WhatsApp';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
-function App() {
+function App({ phoneNumber }) {
   const [cartCount, setCartCount] = useState(0);
   const [cartItems, setCartItems] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -38,6 +39,8 @@ function App() {
       setCartItems(updatedItems);
       setCartCount((prevCount) => prevCount - 1);
     }
+
+    const phoneNumber = '+5491158337062'; 
   };
 
   return (
@@ -52,7 +55,7 @@ function App() {
         <Route path="/itemDetail" element={<ItemDetail addToCart={addToCart}/>} />
         
       </Routes>
-
+      <WhatsApp phoneNumber={phoneNumber} />
       <Footer />
       <CartModal
         cartItems={cartItems}

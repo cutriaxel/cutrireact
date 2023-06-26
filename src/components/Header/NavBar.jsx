@@ -50,9 +50,7 @@ function NavBar({ cartCount, handleOpenModal }) {
             </div>
           </Navbar.Collapse>
           <div className='cart__container'>
-            <div>
-              <p>Mi Carrito</p>
-            </div>
+            
             <div className='cart-widget__count' onClick={handleOpenModal}>
               <CartWidget cartCount={cartCount} />
             </div>
