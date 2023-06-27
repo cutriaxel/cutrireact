@@ -1,0 +1,8 @@
+.detalle_card{
+  transition: all .8s ease-in;
+}
+
+.detalle_card:hover{
+  color: green !important;
+text-decoration: underline;
+}

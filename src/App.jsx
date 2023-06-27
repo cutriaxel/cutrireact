@@ -4,67 +4,49 @@ import NavBar from './components/Header/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Footer from './components/Footer/Footer';
 import CartModal from './components/CartModal/CartModal';
-import FilteredProducts  from './components/Productos/FilteredProducts';
+import FilteredProducts from './components/Productos/FilteredProducts';
 import Productos from './components/Productos/Productos';
 import Contacto from './components/Contacto/Contacto';
-import {ItemDetail} from './components/ItemDetail/ItemDetail';
+import { ItemDetail } from './components/ItemDetail/ItemDetail';
 import WhatsApp from './components/WhatsApp/WhatsApp';
+import Cart from './components/Cart/Cart';
+import { CartProvider } from './Context/CartContext';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
-function App({ phoneNumber }) {
-  const [cartCount, setCartCount] = useState(0);
-  const [cartItems, setCartItems] = useState([]);
-  const [showModal, setShowModal] = useState(false);
+function App() {
 
-   const addToCart = (item) => {
-    setCartItems((prevItems) => [...prevItems, item]);
-    setCartCount((prevCount) => prevCount + 1);
-  };
+  const [showModal, setShowModal] = useState(false);
 
   const handleModal = () => {
     setShowModal(!showModal);
   };
 
-  const handleConfirmPurchase = () => {
-    setCartCount(0);
-    setCartItems([]);
-  };
 
-  const handleRemoveItem = (itemId) => {
-    const indexToRemove = cartItems.findIndex((item) => item.id === itemId);
-    if (indexToRemove !== -1) {
-      const updatedItems = [...cartItems];
-      updatedItems.splice(indexToRemove, 1);
-      setCartItems(updatedItems);
-      setCartCount((prevCount) => prevCount - 1);
-    }
-
-    const phoneNumber = '+5491158337062'; 
-  };
+  const phoneNumber = '+5491158337062';
 
   return (
-    <BrowserRouter>
-      <NavBar cartCount={cartCount} handleOpenModal={handleModal} />
+    <CartProvider>
+      <BrowserRouter>
+        <NavBar handleOpenModal={handleModal} />
 
-      <Routes>
-        <Route path="/" element={<ItemListContainer nombre="Productos" addToCart={addToCart} />} />
-        <Route path="/productos" element={<Productos addToCart={addToCart} />} />
-        <Route path="/productos/:productoId" element={<FilteredProducts addToCart={addToCart} />} />
-        <Route path="/Contacto" element={<Contacto  />} />
-        <Route path="/itemDetail" element={<ItemDetail addToCart={addToCart}/>} />
-        
-      </Routes>
-      <WhatsApp phoneNumber={phoneNumber} />
-      <Footer />
-      <CartModal
-        cartItems={cartItems}
-        showModal={showModal}
-        handleCloseModal={handleModal}
-        handleConfirmPurchase={handleConfirmPurchase}
-        handleRemoveItem={handleRemoveItem}
-      />
-    </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ItemListContainer nombre="Productos" />} />
+          <Route path="/productos" element={<Productos />} />
+          <Route path="/productos/:productoId" element={<FilteredProducts />} />
+          <Route path="/Contacto" element={<Contacto />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/itemDetail" element={<ItemDetail />} />
+
+        </Routes>
+        <WhatsApp phoneNumber={phoneNumber} />
+        <Footer />
+        <CartModal
+          showModal={showModal}
+          handleCloseModal={handleModal}
+        />
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 

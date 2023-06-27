@@ -1,28 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import Button from 'react-bootstrap/Button';
 import './CartModal.scss';
+import { CartContext } from '../../Context/CartContext';
 
 const CartModal = ({
-  cartItems,
   showModal,
   handleCloseModal,
-  handleConfirmPurchase,
-  handleRemoveItem
 }) => {
-  const calculateTotalPrice = () => {
-    let totalPrice = 0;
-    cartItems.forEach((item) => {
-      totalPrice += item.price;
-    });
-    return totalPrice;
-  };
 
-  const handleItemClick = (itemId) => {
-    handleRemoveItem(itemId);
-  };
+  const {cart, eliminarDelCarrito, totalCompra, vaciarCarrito} = useContext(CartContext);
 
   return (
     <Modal show={showModal} onHide={handleCloseModal} className="cart-modal">
@@ -33,14 +22,14 @@ const CartModal = ({
       </Modal.Header>
       <Modal.Body>
         <div className="modal-content">
-          {cartItems.length > 0 ? (
+          {cart.length > 0 ? (
             <div className="modal-body">
-              {cartItems.map((item, index) => (
+              {cart.map((item, index) => (
                 <div key={item.id}>
                   <p>{item.title}</p>
                   <div className="item-container">
                     <img src={item.image} alt={item.title} width="100" height="100" />
-                    <Button style={{ marginLeft: '30px' }} variant="danger" onClick={() => handleItemClick(item.id, index)}>
+                    <Button style={{ marginLeft: '30px' }} variant="danger" onClick={() => eliminarDelCarrito(item.id)}>
                       <FontAwesomeIcon icon={faTrash} />
                     </Button>
                   </div>
@@ -48,7 +37,7 @@ const CartModal = ({
                   <hr />
                 </div>
               ))}
-              <p>Precio Total: ${calculateTotalPrice()}</p>
+              <p>Precio Total: ${totalCompra()}</p>
             </div>
           ) : (
             <p>No hay productos en el carrito</p>
@@ -59,7 +48,7 @@ const CartModal = ({
         <Button variant="secondary" onClick={handleCloseModal}>
           Seguir comprando
         </Button>
-        <Button variant="success" onClick={handleConfirmPurchase}>
+        <Button variant="success" onClick={vaciarCarrito}>
           Confirmar compra
         </Button>
       </Modal.Footer>

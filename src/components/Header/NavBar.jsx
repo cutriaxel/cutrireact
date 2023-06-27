@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './NavBar.scss';
 import CartWidget from '../CartWidget/CartWidget';
 import Button from 'react-bootstrap/Button';
@@ -9,14 +9,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from '..//..//assets/react.svg';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../Context/CartContext';
 
 
-function NavBar({ cartCount, handleOpenModal }) {
+function NavBar({ handleOpenModal }) {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
+
+  const {cart} = useContext(CartContext);
 
   return (
     <header>
@@ -52,7 +55,7 @@ function NavBar({ cartCount, handleOpenModal }) {
           <div className='cart__container'>
             
             <div className='cart-widget__count' onClick={handleOpenModal}>
-              <CartWidget cartCount={cartCount} />
+              <CartWidget cartCount={cart.length} />
             </div>
           </div>
         </Container>
