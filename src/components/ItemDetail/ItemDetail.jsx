@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import Swal from 'sweetalert2';
 import './ItemDetail.scss';
 import { Button } from "react-bootstrap";
 import { CartContext } from '../../Context/CartContext';
@@ -25,7 +24,7 @@ export const ItemDetail = ({ addToCart }) => {
         <Button className="item-detail-button" onClick={() => agregarAlCarrito(state.card)}>
           Agregar al carrito
         </Button>
-        <Button>
+        <Button >
         <Link  to="/cart"> VER </Link>
         </Button>
         

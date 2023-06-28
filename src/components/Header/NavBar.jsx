@@ -38,6 +38,7 @@ function NavBar({ handleOpenModal }) {
               <Link className='nav__link' style={{ color: 'white' }} to={"/"} >Inicio</Link>
               <Link className='nav__link' style={{ color: 'white' }} to={"/productos"} >Productos</Link>
               <Link className='nav__link' style={{ color: 'white' }} to={"/Contacto"} >Contacto</Link>
+              <Link className='nav__link' style={{ color: 'white' }} to={"/Cart"} >Mis productos</Link>
             </Nav>
 
             <div className='form__container'>
