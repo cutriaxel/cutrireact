@@ -1,9 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './NavBar.scss';
 import CartWidget from '../CartWidget/CartWidget';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '..//..//assets/react.svg';
@@ -23,45 +21,32 @@ function NavBar({ handleOpenModal }) {
 
   return (
     <header>
-      <Navbar className='nav__container' expand="lg">
-        <Container fluid>
-          <div className='logo__container'>
-            <img src={logo} alt="Logo" className="logo" />
-          </div>
-          <Navbar.Toggle aria-controls="navbarScroll" onClick={toggleSidebar} />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="link my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
-              navbarScroll
-            >
-              <Link className='nav__link' style={{ color: 'white' }} to={"/"} >Inicio</Link>
-              <Link className='nav__link' style={{ color: 'white' }} to={"/productos"} >Productos</Link>
-              <Link className='nav__link' style={{ color: 'white' }} to={"/Contacto"} >Contacto</Link>
-              <Link className='nav__link' style={{ color: 'white' }} to={"/Cart"} >Mis productos</Link>
-            </Nav>
+   <Navbar bg="dark" expand="lg" className="navbar__container">
+    
+      <Container style={{ display: 'contents' }}>
+        <div className="logo__container">
+          <img src={logo} alt="Logo" className="logo" />
+        </div>
 
-            <div className='form__container'>
-              <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Buscar"
-                  className="me-4"
-                  aria-label="Search"
-                />
-                <Button variant="success">Buscar</Button>
-              </Form>
-            </div>
-          </Navbar.Collapse>
-          <div className='cart__container'>
-            
-            <div className='cart-widget__count' onClick={handleOpenModal}>
+        <Navbar.Toggle aria-controls="navbarNav" />
+
+        <Navbar.Collapse id="navbarNav" className="justify-content-center">
+          <Nav className="nav__link">
+          <Link className='nav__link'  to={"/"} >Inicio</Link>
+              <Link className='nav__link'  to={"/productos"} >Productos</Link>
+              <Link className='nav__link'  to={"/Contacto"} >Contacto</Link>
+              <Link className='nav__link'  to={"/Cart"} >Mis productos</Link>
+          </Nav>
+          <div className='cart-widget__count' onClick={handleOpenModal}>
               <CartWidget cartCount={cart.length} />
             </div>
-          </div>
-        </Container>
-      </Navbar>
-
+        </Navbar.Collapse>
+       
+      </Container>
+    </Navbar>
+      
+      
+      
       <div className="sidebar__container">
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <div className='hamburguer-button'>
@@ -86,7 +71,9 @@ function NavBar({ handleOpenModal }) {
             </ul>
           </div>
         )}
-      </div>
+      </div> 
+
+      
     </header>
   );
 }

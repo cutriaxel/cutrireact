@@ -1,0 +1,68 @@
+.resumen-compra {
+  margin-top: 17rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.producto-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.producto-imagen {
+  flex: 1;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+.producto-imagen img {
+  width: 250px;
+  height: auto;
+}
+
+.producto-info {
+  flex: 1;
+}
+
+.producto-titulo {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.producto-precio {
+  color: white;
+}
+
+.producto-eliminar-carrito {
+  margin-top: 20px;
+}
+
+
+.container-compra {
+  display: flex;
+  justify-content: center;
+
+}
+.total-compra {
+  color: white;
+  margin-right: 50px;
+}
+
+.total-compra h5 {
+  font-size: 40px;
+}
+
+.btn-compra {
+
+  display: flex;
+  
+}
+
+.btn-pagar {
+  margin-right: 10px;
+}

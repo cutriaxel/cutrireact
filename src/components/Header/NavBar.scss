@@ -15,30 +15,22 @@ header {
   background-color: #0e0f0f !important;
 }
 
-.form__container {
-  margin-left: 150px;
-}
-
-.logo__container {
-  margin-left: 25px;
-  margin-right: 450px;
-}
-
 .hamburguer-button {
-  margin-left: 30px;
-  padding: 15px;
+  padding: 5px;
 }
 
 .sidebar__container {
   background-color: #181a1b !important;
   border-top: 0 !important;
+  padding: 10px;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 17%;
+  width: 14%;
+  margin-top: 0.65rem;
   height: 100vh;
   background-color: black;
   padding-top: 2rem;
@@ -100,7 +92,7 @@ header {
 }
 
 .cart__container p {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .cart-widget__count span {
@@ -115,17 +107,51 @@ header {
   text-align: center;
 }
 
-.nav__link {
-  text-decoration: none;
-  font-size: 20px;
-  margin-right: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: inherit;
-  color: green;
-  
-}
+
 
 @media (max-width: 768px){
 .nav__link{
   margin-bottom: 10px;
 }}
+
+.navbar__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo__container img {
+  width: 100px;
+  height: auto;
+}
+
+.nav__link {
+  list-style: none;
+  padding: 0;
+  padding-right: 8px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat",Sans-serif;
+}
+
+.nav__link .nav__link {
+  color: #d2cccc;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.nav__link .nav__link:hover {
+  color: #2cbc2c;
+}
+

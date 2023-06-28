@@ -24,10 +24,6 @@ export const ItemDetail = ({ addToCart }) => {
         <Button className="item-detail-button" onClick={() => agregarAlCarrito(state.card)}>
           Agregar al carrito
         </Button>
-        <Button >
-        <Link  to="/cart"> VER </Link>
-        </Button>
-        
       </div>
     </div>
     </div>
