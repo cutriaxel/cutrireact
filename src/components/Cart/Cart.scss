@@ -1,68 +1,123 @@
-.resumen-compra {
-  margin-top: 17rem;
+// .resumen-compra {
+//   margin-top: 17rem;
+//   display: flex;
+//   justify-content: center;
+//   color: white;
+// }
+
+// .producto-container {
+//   display: flex;
+//   justify-content: center;
+//   margin: 0 auto;
+//   padding: 20px;
+//   margin-bottom: 20px;
+// }
+
+// .producto-imagen {
+//   flex: 1;
+//   margin-left: 100px;
+//   margin-right: 20px;
+// }
+
+// .producto-imagen img {
+//   width: 250px;
+//   height: auto;
+// }
+
+// .producto-info {
+//   flex: 1;
+// }
+
+// .producto-titulo {
+//   margin-top: 15px;
+//   margin-bottom: 40px;
+//   color: white;
+// }
+
+// .producto-precio {
+//   color: white;
+// }
+
+// .producto-eliminar-carrito {
+//   margin-top: 20px;
+// }
+
+
+// .container-compra {
+//   display: flex;
+//   justify-content: center;
+
+// }
+// .total-compra {
+//   color: white;
+//   margin-right: 50px;
+// }
+
+// .total-compra h5 {
+//   font-size: 40px;
+// }
+
+// .btn-compra {
+
+//   display: flex;
+  
+// }
+
+// .btn-pagar {
+//   margin-right: 10px;
+// }
+
+.productos-container {
   display: flex;
-  justify-content: center;
-  color: white;
+  flex-wrap: wrap;
+}
+
+.contenedor-producto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .producto-container {
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 20px;
-  margin-bottom: 20px;
+  width: 50%;
+  padding: 10px;
 }
 
-.producto-imagen {
-  flex: 1;
-  margin-left: 100px;
-  margin-right: 20px;
+.nuevo-contenedor-derecha {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 10px;
 }
-
-.producto-imagen img {
-  width: 250px;
-  height: auto;
-}
-
-.producto-info {
-  flex: 1;
-}
-
-.producto-titulo {
-  margin-top: 15px;
-  margin-bottom: 40px;
-  color: white;
-}
-
-.producto-precio {
-  color: white;
-}
-
-.producto-eliminar-carrito {
-  margin-top: 20px;
-}
-
 
 .container-compra {
   display: flex;
-  justify-content: center;
-
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
+
 .total-compra {
-  color: white;
-  margin-right: 50px;
-}
-
-.total-compra h5 {
-  font-size: 40px;
+  margin-bottom: 10px;
 }
 
 .btn-compra {
-
   display: flex;
-  
+  justify-content: space-between;
 }
 
-.btn-pagar {
-  margin-right: 10px;
+.btn-pagar,
+.btn-vaciar {
+  width: 48%;
+}
+
+.carrito-vacio {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.producto-imagen img {
+  width: 60px;
 }
