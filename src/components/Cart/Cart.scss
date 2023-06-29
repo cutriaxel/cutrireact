@@ -1,123 +1,53 @@
-// .resumen-compra {
-//   margin-top: 17rem;
-//   display: flex;
-//   justify-content: center;
-//   color: white;
-// }
-
-// .producto-container {
-//   display: flex;
-//   justify-content: center;
-//   margin: 0 auto;
-//   padding: 20px;
-//   margin-bottom: 20px;
-// }
-
-// .producto-imagen {
-//   flex: 1;
-//   margin-left: 100px;
-//   margin-right: 20px;
-// }
-
-// .producto-imagen img {
-//   width: 250px;
-//   height: auto;
-// }
-
-// .producto-info {
-//   flex: 1;
-// }
-
-// .producto-titulo {
-//   margin-top: 15px;
-//   margin-bottom: 40px;
-//   color: white;
-// }
-
-// .producto-precio {
-//   color: white;
-// }
-
-// .producto-eliminar-carrito {
-//   margin-top: 20px;
-// }
-
-
-// .container-compra {
-//   display: flex;
-//   justify-content: center;
-
-// }
-// .total-compra {
-//   color: white;
-//   margin-right: 50px;
-// }
-
-// .total-compra h5 {
-//   font-size: 40px;
-// }
-
-// .btn-compra {
-
-//   display: flex;
-  
-// }
-
-// .btn-pagar {
-//   margin-right: 10px;
-// }
-
-.productos-container {
-  display: flex;
-  flex-wrap: wrap;
+.resumen-compra {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 15rem;
 }
 
-.contenedor-producto {
+.row {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 .producto-container {
   display: flex;
-  width: 50%;
-  padding: 10px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.nuevo-contenedor-derecha {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  padding: 10px;
+.producto-imagen img {
+  width: 100px;
+  height: auto;
 }
 
-.container-compra {
+.producto-info {
+  margin-left: 10px;
+}
+
+.producto-titulo h4 {
+  margin: 0;
+}
+
+.producto-precio {
   display: flex;
-  flex-direction: column;
-  border: 1px solid #ccc;
-  padding: 10px;
+  align-items: center;
 }
 
 .total-compra {
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 .btn-compra {
   display: flex;
   justify-content: space-between;
-}
-
-.btn-pagar,
-.btn-vaciar {
-  width: 48%;
+  margin-top: 10px;
 }
 
 .carrito-vacio {
-  margin-top: 20px;
   text-align: center;
+  margin-top: 20px;
 }
 
-.producto-imagen img {
-  width: 60px;
+.carrito-vacio button {
+  margin-top: 10px;
 }

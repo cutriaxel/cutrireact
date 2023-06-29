@@ -16,42 +16,42 @@ const Cart = () => {
       <hr />
 
       {cart.length > 0 ? (
-        <div className="row"> {/* Contenedor principal */}
-          <div className="col-md-8"> {/* Columna para los productos */}
+        <div className="row">
+          <div className="col-md-8">
             {cart.map((prod) => (
-              <div className='producto-container' key={prod.id}>
-                <div className='producto-imagen'>
+              <div className="producto-container" key={prod.id}>
+               <hr />
+                <div className="producto-imagen">
                   <img src={prod.image} alt={prod.title} />
                 </div>
-                <div className='producto-info'>
-                  <div className='producto-titulo'>
+                <div className="producto-info">
+                  <div className="producto-titulo">
                     <h4>{prod.title}</h4>
                   </div>
-                  <div className='col-md-2 producto-precio'>
-                    <p>Precio: ${prod.price}</p>
+                  <div className="col-md-2 producto-precio">
+                    <p> ${prod.price}</p>
                     <button className="btn btn-danger" onClick={() => eliminarDelCarrito(prod.id)}>
                       <FontAwesomeIcon icon={faTrash} />
                     </button>
                   </div>
-                 
                 </div>
                 <hr />
               </div>
             ))}
           </div>
-          <div className='col-md-3'> {/* Columna para el resumen de compra */}
-            <div className='container-compra'>
-              <div className='total-compra'>
+          <div className="col-md-3">
+            <div className="container-compra">
+              <div className="total-compra">
                 <h5>Total: ${totalCompra()}</h5>
               </div>
               <hr />
-              <div className='btn-compra'>
-                <div className='btn-pagar'>
+              <div className="btn-compra">
+                <div className="btn-pagar">
                   <button onClick={vaciarCarrito} className="btn btn-success">
                     Ir a pagar
                   </button>
                 </div>
-                <div className='btn-vaciar'>
+                <div className="btn-vaciar">
                   <button onClick={vaciarCarrito} className="btn btn-danger">
                     Vaciar carrito
                   </button>
