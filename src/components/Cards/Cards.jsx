@@ -4,6 +4,7 @@ import { pedirDatos } from "../../helpers/PedirDatos";
 import { CustomCard } from "../CustomCard/CustomCard";
 import { FadeLoader } from "react-spinners";
 import "./Cards.scss";
+import { collection } from 'firebase/firestore';
 
 const Cards = ({ addToCart }) => {
   const [loading, setLoading] = useState(true);
