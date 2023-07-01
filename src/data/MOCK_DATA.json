@@ -1,103 +1,103 @@
-[
-  {
-    "id": 1,
-    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/100-100000263BOX_800.jpg",
-    "title": "Micro Amd Ryzen 7 5700g 4.6 Ghz Am4",
-    "price": 155257,
-    "category": "Procesadores",
-    "description": "El Ryzen 7 5700G cuenta con 8 núcleos y 16 hilos de procesamiento. Esto significa que puede manejar tareas intensivas en paralelo y ofrece un rendimiento sólido en aplicaciones que aprovechan múltiples núcleos."
-  },
-  {
-    "id": 2,
-    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/BX8070811900K_800.jpg",
-    "title": "Micro Intel I9-11700kf 5.0ghz 16mb s.1200",
-    "price": 221674,
-    "category": "Procesadores",
-    "description": "El procesador Intel Core i9 es una potente unidad de procesamiento diseñada para satisfacer las necesidades más exigentes en términos de rendimiento y capacidad de procesamiento."
-  },
-  {
-    "id": 3,
-    "image": "https://www.deffo.com.ar/wp-content/uploads/2023/04/Ryzen-9-Series-7000-X-2.webp",
-    "title": "Micro Amd Ryzen 9 5900x 4.8 Ghz Am4",
-    "price": 298315,
-    "category": "Procesadores",
-    "description": "El Ryzen 9 ofrece un rendimiento excepcional en tareas intensivas en CPU, como la edición de video, la renderización 3D y la creación de contenido. Sus 12 núcleos y 24 hilos permiten un procesamiento multitarea eficiente y rápido. Con una frecuencia turbo máxima de 4.9 GHz, el procesador puede aumentar su velocidad de reloj para brindar un rendimiento adicional cuando se requiere un impulso extra."
-  },
-  {
-    "id": 4,
-    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/241V8L-77_800.jpg",
-    "title": "Monitor LED CURVO 24 Samsung",
-    "price": 108823,
-    "category": "Monitores",
-    "description": "El monitor LED curvo de 24 pulgadas ofrece una experiencia envolvente con su curvatura de 1800R, lo que permite una visualización más cómoda y sin distorsiones. La resolución Full HD proporciona imágenes nítidas y detalladas, ideal para disfrutar de contenido multimedia, juegos y trabajo en general.\n\nEl panel VA ofrece colores vibrantes y un excelente contraste, con un ratio de contraste de 3000:1 para imágenes más realistas y colores más intensos. El tiempo de respuesta de 4 ms asegura una transición suave y rápida de los píxeles, evitando el efecto ghosting en escenas de acción.\n\nDescubre una nueva forma de disfrutar tus contenidos con el monitor LED curvo de 24 pulgadas de Samsung. Su diseño elegante y moderno se adapta a cualquier entorno, mientras que su rendimiento visual y características avanzadas te permiten sumergirte en tus actividades digitales con una calidad excepcional."
-  },
-  {
-    "id": 5,
-    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/NFG-0784_800.jpg",
-    "title": "Silla Gamer Genesis RGB Black",
-    "price": 134999,
-    "category": "Sillas",
-    "description": "La Silla Gamer Genesis RGB Black combina estilo, comodidad y funcionalidad. Su diseño ergonómico y ajustable te permite personalizar la posición de la silla según tus necesidades, brindando un soporte adecuado para tu espalda y cuello durante largas sesiones de juego. El material de cuero sintético de alta calidad proporciona durabilidad y facilita la limpieza.\n\nLa iluminación RGB integrada en la parte trasera de la silla agrega un toque de estilo y ambiente a tu espacio de juego. Puedes seleccionar diferentes colores y efectos de iluminación para personalizar la apariencia de la silla.\n\nDisfruta de una experiencia de juego cómoda y con estilo con la Silla Gamer Genesis RGB Black. Su diseño moderno y características avanzadas la convierten en una opción ideal para gamers y entusiastas de la tecnología."
-  },
-  {
-    "id": 6,
-    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/K552-BB-SP_800.jpg",
-    "title": "Fury Thunderstreak Combo",
-    "price": 11834,
-    "category": "Perifericos",
-    "description": "El Fury Thunderstreak Combo es una excelente opción para aquellos que buscan un conjunto de teclado y mouse confiables y de alto rendimiento. Tanto el teclado como el mouse están diseñados para adaptarse a las necesidades de los jugadores, brindando un control preciso, comodidad y estilo durante tus sesiones de juego. Con su diseño robusto y funciones avanzadas, el Fury Thunderstreak Combo te ayudará a llevar tu experiencia de juego al siguiente nivel."
-  },
-  {
-    "id": 7,
-    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/6950376783431_600.jpg",
-    "title": "Auricular Genesis Neon 750 Rgb Black",
-    "price": 21253,
-    "category": "Perifericos",
-    "description": "El auricular Genesis Neon 750 RGB Black ofrece una experiencia auditiva inmersiva y comodidad durante tus sesiones de juego o escucha de música. El auricular Genesis Neon 750 RGB Black combina estilo, rendimiento y comodidad para brindarte una experiencia auditiva excepcional. Su diseño elegante, iluminación RGB personalizable y funciones avanzadas lo convierten en una opción ideal para jugadores y amantes de la música que buscan un auricular de alta calidad."
-  },
-  {
-    "id": 8,
-    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/PC-Armada-Alta-2019_600.jpg",
-    "title": "PC  Armada Completa Ryzen 5 4600G 16GB 480GB",
-    "price": 204357,
-    "category": "Computadoras",
-    "description": "Esta PC armada completa es ideal para usuarios que buscan un equilibrio entre rendimiento y valor. Con su procesador Ryzen 5 4600G, 16GB de RAM y almacenamiento SSD, podrás disfrutar de una experiencia informática fluida, ya sea para juegos, trabajo o entretenimiento. Su configuración garantiza un rendimiento confiable y una capacidad de respuesta rápida, lo que te permitirá realizar tus tareas diarias de manera eficiente."
-  },
-  {
-    "id": 9,
-    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/LG19M38A-B_800.jpg",
-    "title": "Monitor LED TN 22 Asus VP228HE-J FHD 1ms",
-    "price": 67189,
-    "category": "Monitores",
-    "description": "El monitor LED TN 22 Asus VP228HE-J FHD 1ms ofrece una experiencia visual impresionante con su pantalla Full HD y un tiempo de respuesta de 1 ms. Es una excelente opción para aquellos que buscan un monitor compacto pero potente, con una rápida respuesta y una calidad de imagen impresionante. Ya sea para jugar, trabajar o ver contenido multimedia, este monitor te brindará una experiencia visual envolvente y de alta calidad."
-  },
+// [
+//   {
+//     "id": 1,
+//     "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/100-100000263BOX_800.jpg",
+//     "title": "Micro Amd Ryzen 7 5700g 4.6 Ghz Am4",
+//     "price": 155257,
+//     "category": "Procesadores",
+//     "description": "El Ryzen 7 5700G cuenta con 8 núcleos y 16 hilos de procesamiento. Esto significa que puede manejar tareas intensivas en paralelo y ofrece un rendimiento sólido en aplicaciones que aprovechan múltiples núcleos."
+//   },
+//   {
+//     "id": 2,
+//     "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/BX8070811900K_800.jpg",
+//     "title": "Micro Intel I9-11700kf 5.0ghz 16mb s.1200",
+//     "price": 221674,
+//     "category": "Procesadores",
+//     "description": "El procesador Intel Core i9 es una potente unidad de procesamiento diseñada para satisfacer las necesidades más exigentes en términos de rendimiento y capacidad de procesamiento."
+//   },
+//   {
+//     "id": 3,
+//     "image": "https://www.deffo.com.ar/wp-content/uploads/2023/04/Ryzen-9-Series-7000-X-2.webp",
+//     "title": "Micro Amd Ryzen 9 5900x 4.8 Ghz Am4",
+//     "price": 298315,
+//     "category": "Procesadores",
+//     "description": "El Ryzen 9 ofrece un rendimiento excepcional en tareas intensivas en CPU, como la edición de video, la renderización 3D y la creación de contenido. Sus 12 núcleos y 24 hilos permiten un procesamiento multitarea eficiente y rápido. Con una frecuencia turbo máxima de 4.9 GHz, el procesador puede aumentar su velocidad de reloj para brindar un rendimiento adicional cuando se requiere un impulso extra."
+//   },
+//   {
+//     "id": 4,
+//     "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/241V8L-77_800.jpg",
+//     "title": "Monitor LED CURVO 24 Samsung",
+//     "price": 108823,
+//     "category": "Monitores",
+//     "description": "El monitor LED curvo de 24 pulgadas ofrece una experiencia envolvente con su curvatura de 1800R, lo que permite una visualización más cómoda y sin distorsiones. La resolución Full HD proporciona imágenes nítidas y detalladas, ideal para disfrutar de contenido multimedia, juegos y trabajo en general.\n\nEl panel VA ofrece colores vibrantes y un excelente contraste, con un ratio de contraste de 3000:1 para imágenes más realistas y colores más intensos. El tiempo de respuesta de 4 ms asegura una transición suave y rápida de los píxeles, evitando el efecto ghosting en escenas de acción.\n\nDescubre una nueva forma de disfrutar tus contenidos con el monitor LED curvo de 24 pulgadas de Samsung. Su diseño elegante y moderno se adapta a cualquier entorno, mientras que su rendimiento visual y características avanzadas te permiten sumergirte en tus actividades digitales con una calidad excepcional."
+//   },
+//   {
+//     "id": 5,
+//     "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/NFG-0784_800.jpg",
+//     "title": "Silla Gamer Genesis RGB Black",
+//     "price": 134999,
+//     "category": "Sillas",
+//     "description": "La Silla Gamer Genesis RGB Black combina estilo, comodidad y funcionalidad. Su diseño ergonómico y ajustable te permite personalizar la posición de la silla según tus necesidades, brindando un soporte adecuado para tu espalda y cuello durante largas sesiones de juego. El material de cuero sintético de alta calidad proporciona durabilidad y facilita la limpieza.\n\nLa iluminación RGB integrada en la parte trasera de la silla agrega un toque de estilo y ambiente a tu espacio de juego. Puedes seleccionar diferentes colores y efectos de iluminación para personalizar la apariencia de la silla.\n\nDisfruta de una experiencia de juego cómoda y con estilo con la Silla Gamer Genesis RGB Black. Su diseño moderno y características avanzadas la convierten en una opción ideal para gamers y entusiastas de la tecnología."
+//   },
+//   {
+//     "id": 6,
+//     "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/K552-BB-SP_800.jpg",
+//     "title": "Fury Thunderstreak Combo",
+//     "price": 11834,
+//     "category": "Perifericos",
+//     "description": "El Fury Thunderstreak Combo es una excelente opción para aquellos que buscan un conjunto de teclado y mouse confiables y de alto rendimiento. Tanto el teclado como el mouse están diseñados para adaptarse a las necesidades de los jugadores, brindando un control preciso, comodidad y estilo durante tus sesiones de juego. Con su diseño robusto y funciones avanzadas, el Fury Thunderstreak Combo te ayudará a llevar tu experiencia de juego al siguiente nivel."
+//   },
+//   {
+//     "id": 7,
+//     "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/6950376783431_600.jpg",
+//     "title": "Auricular Genesis Neon 750 Rgb Black",
+//     "price": 21253,
+//     "category": "Perifericos",
+//     "description": "El auricular Genesis Neon 750 RGB Black ofrece una experiencia auditiva inmersiva y comodidad durante tus sesiones de juego o escucha de música. El auricular Genesis Neon 750 RGB Black combina estilo, rendimiento y comodidad para brindarte una experiencia auditiva excepcional. Su diseño elegante, iluminación RGB personalizable y funciones avanzadas lo convierten en una opción ideal para jugadores y amantes de la música que buscan un auricular de alta calidad."
+//   },
+//   {
+//     "id": 8,
+//     "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/PC-Armada-Alta-2019_600.jpg",
+//     "title": "PC  Armada Completa Ryzen 5 4600G 16GB 480GB",
+//     "price": 204357,
+//     "category": "Computadoras",
+//     "description": "Esta PC armada completa es ideal para usuarios que buscan un equilibrio entre rendimiento y valor. Con su procesador Ryzen 5 4600G, 16GB de RAM y almacenamiento SSD, podrás disfrutar de una experiencia informática fluida, ya sea para juegos, trabajo o entretenimiento. Su configuración garantiza un rendimiento confiable y una capacidad de respuesta rápida, lo que te permitirá realizar tus tareas diarias de manera eficiente."
+//   },
+//   {
+//     "id": 9,
+//     "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/LG19M38A-B_800.jpg",
+//     "title": "Monitor LED TN 22 Asus VP228HE-J FHD 1ms",
+//     "price": 67189,
+//     "category": "Monitores",
+//     "description": "El monitor LED TN 22 Asus VP228HE-J FHD 1ms ofrece una experiencia visual impresionante con su pantalla Full HD y un tiempo de respuesta de 1 ms. Es una excelente opción para aquellos que buscan un monitor compacto pero potente, con una rápida respuesta y una calidad de imagen impresionante. Ya sea para jugar, trabajar o ver contenido multimedia, este monitor te brindará una experiencia visual envolvente y de alta calidad."
+//   },
 
-  {
-    "id": 10,
-    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/PC-Armada-Alta-0056_800.jpg",
-    "title": "PC Intel Core I5 11400F - 16GB - 512GB NVME - RTX 3060 - WIFI",
-    "price": 579853,
-    "category": "Computadoras",
-    "description": "La PC con el procesador Intel Core i5 11400F, 16GB de RAM, 512GB NVMe y la tarjeta gráfica RTX 3060 ofrece un rendimiento potente y una experiencia de juego inmersiva. El procesador Intel Core i5 11400F cuenta con 6 núcleos y 12 hilos, ofreciendo un excelente rendimiento en aplicaciones y juegos. Su frecuencia base de 2.6GHz y frecuencia turbo de hasta 4.4GHz garantizan una ejecución rápida y fluida de tareas intensivas."
-  },
+//   {
+//     "id": 10,
+//     "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/PC-Armada-Alta-0056_800.jpg",
+//     "title": "PC Intel Core I5 11400F - 16GB - 512GB NVME - RTX 3060 - WIFI",
+//     "price": 579853,
+//     "category": "Computadoras",
+//     "description": "La PC con el procesador Intel Core i5 11400F, 16GB de RAM, 512GB NVMe y la tarjeta gráfica RTX 3060 ofrece un rendimiento potente y una experiencia de juego inmersiva. El procesador Intel Core i5 11400F cuenta con 6 núcleos y 12 hilos, ofreciendo un excelente rendimiento en aplicaciones y juegos. Su frecuencia base de 2.6GHz y frecuencia turbo de hasta 4.4GHz garantizan una ejecución rápida y fluida de tareas intensivas."
+//   },
 
-  {
-    "id": 11,
-    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/PC-Armada-Alta-0005_800.jpg",
-    "title": "PC AMD Ryzen 5 5600X - 16GB - 512GB NVME - RTX 2060",
-    "price": 619853,
-    "category": "Computadoras",
-    "description": "La PC con el procesador AMD Ryzen 5 5600X, 16GB de RAM, 512GB NVMe y la tarjeta gráfica RTX 2060 ofrece un rendimiento excepcional para juegos y tareas exigentes. El procesador AMD Ryzen 5 5600X cuenta con 6 núcleos y 12 hilos, ofreciendo un rendimiento rápido y eficiente. Su frecuencia base de 3.7GHz y frecuencia turbo de hasta 4.6GHz garantizan una experiencia fluida y sin interrupciones. Con la tarjeta gráfica RTX 2060, disfrutarás de gráficos de alta calidad y un rendimiento visual impresionante. Esta PC es perfecta para los jugadores y creadores de contenido que buscan potencia y rendimiento en un solo paquete."
-  },
+//   {
+//     "id": 11,
+//     "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/PC-Armada-Alta-0005_800.jpg",
+//     "title": "PC AMD Ryzen 5 5600X - 16GB - 512GB NVME - RTX 2060",
+//     "price": 619853,
+//     "category": "Computadoras",
+//     "description": "La PC con el procesador AMD Ryzen 5 5600X, 16GB de RAM, 512GB NVMe y la tarjeta gráfica RTX 2060 ofrece un rendimiento excepcional para juegos y tareas exigentes. El procesador AMD Ryzen 5 5600X cuenta con 6 núcleos y 12 hilos, ofreciendo un rendimiento rápido y eficiente. Su frecuencia base de 3.7GHz y frecuencia turbo de hasta 4.6GHz garantizan una experiencia fluida y sin interrupciones. Con la tarjeta gráfica RTX 2060, disfrutarás de gráficos de alta calidad y un rendimiento visual impresionante. Esta PC es perfecta para los jugadores y creadores de contenido que buscan potencia y rendimiento en un solo paquete."
+//   },
 
-  {
-    "id": 12,
-    "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/910-005795_600.jpg",
-    "title": "Mouse Logitech G203 Lightsync Azul - GAMER RGB",
-    "price": 13844,
-    "category": "Perifericos",
-    "description": "El mouse Logitech G203 Lightsync Azul es una excelente opción para los jugadores que buscan precisión y comodidad. Cuenta con un sensor óptico avanzado que proporciona un seguimiento preciso del movimiento, permitiéndote realizar movimientos rápidos y precisos en tus juegos favoritos. Su diseño ergonómico se adapta cómodamente a tu mano, brindando comodidad incluso durante largas sesiones de juego. Además, el mouse cuenta con iluminación RGB personalizable, lo que te permite personalizar el aspecto visual según tus preferencias. Con el Logitech G203 Lightsync Azul, estarás listo para llevar tu experiencia de juego al siguiente nivel."
-  }
+//   {
+//     "id": 12,
+//     "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/910-005795_600.jpg",
+//     "title": "Mouse Logitech G203 Lightsync Azul - GAMER RGB",
+//     "price": 13844,
+//     "category": "Perifericos",
+//     "description": "El mouse Logitech G203 Lightsync Azul es una excelente opción para los jugadores que buscan precisión y comodidad. Cuenta con un sensor óptico avanzado que proporciona un seguimiento preciso del movimiento, permitiéndote realizar movimientos rápidos y precisos en tus juegos favoritos. Su diseño ergonómico se adapta cómodamente a tu mano, brindando comodidad incluso durante largas sesiones de juego. Además, el mouse cuenta con iluminación RGB personalizable, lo que te permite personalizar el aspecto visual según tus preferencias. Con el Logitech G203 Lightsync Azul, estarás listo para llevar tu experiencia de juego al siguiente nivel."
+//   }
 
   
-]
+// ]

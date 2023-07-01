@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './ItemDetail.scss';
 import { Button } from "react-bootstrap";
 import { CartContext } from '../../Context/CartContext';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 
 export const ItemDetail = ({ addToCart }) => {
