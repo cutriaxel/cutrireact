@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { pedirDatos } from "../../helpers/PedirDatos";
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import { db } from "../../firebase/config";
 import { CustomCard } from "../CustomCard/CustomCard";
 import { FadeLoader } from "react-spinners";
 import "./Cards.scss";
-import { collection } from 'firebase/firestore';
 
 const Cards = ({ addToCart }) => {
   const [loading, setLoading] = useState(true);
@@ -12,15 +12,26 @@ const Cards = ({ addToCart }) => {
   const { productoId } = useParams();
 
   useEffect(() => {
-    pedirDatos()
-      .then((res) => {
-        const filtered = res.filter((prod) => prod.category === productoId);
-        setItems(filtered);
-      })
-      .catch((err) => console.log(err))
-      .finally(() => {
+    const fetchData = async () => {
+      setLoading(true);
+
+      try {
+        const productosRef = collection(db, "productos");
+        const q = query(productosRef, where("category", "==", productoId));
+        const querySnapshot = await getDocs(q);
+        const data = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        setItems(data);
+      } catch (error) {
+        console.log(error);
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+
+    fetchData();
   }, [productoId]);
 
   return (
@@ -41,4 +52,5 @@ const Cards = ({ addToCart }) => {
 };
 
 export default Cards;
+
 

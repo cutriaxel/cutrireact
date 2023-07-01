@@ -1,24 +1,43 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { CustomCard } from "../CustomCard/CustomCard";
 import "./Productos.scss";
-import { pedirDatos } from "../../helpers/PedirDatos";
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from "../../firebase/config";
 import { FadeLoader } from "react-spinners";
+import { CartContext } from "../../Context/CartContext"; 
 
-const Productos = ({ addToCart }) => {
+const Productos = () => {
   const [loading, setLoading] = useState(true);
   const [cardData, setCardData] = useState([]);
+  const { agregarAlCarrito } = useContext(CartContext); 
 
   useEffect(() => {
-    pedirDatos()
-      .then((res) => {
-        setCardData(res);
-      })
-      .catch((err) => console.log(err))
-      .finally(() => {
+    const fetchData = async () => {
+      setLoading(true);
+
+      try {
+        const productosRef = collection(db, "productos");
+        const querySnapshot = await getDocs(productosRef);
+        const data = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        setCardData(data);
+      } catch (error) {
+        console.log(error);
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+
+    fetchData();
   }, []);
+
+  const handleAddToCart = (item) => {
+    agregarAlCarrito(item); 
+    alert(`${item.title} agregado al carrito`);
+  };
 
   return (
     <>
@@ -34,13 +53,9 @@ const Productos = ({ addToCart }) => {
         ) : (
           <div className="card-container">
             {cardData.map((card) => (
-              <Link
-
-                key={card.id}
-                className="custom-card-link"
-              >
-                <CustomCard card={card} addToCart={addToCart} />
-              </Link>
+              <div key={card.id} className="custom-card-link">
+                <CustomCard card={card} addToCart={handleAddToCart} /> 
+              </div>
             ))}
           </div>
         )}
