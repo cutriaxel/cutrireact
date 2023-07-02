@@ -30,7 +30,7 @@ const Cart = () => {
                   </div>
                   <div className="producto-precio">
                     <p> ${prod.price}</p>
-                    <FontAwesomeIcon icon={faTrash} onClick={() => eliminarDelCarrito(prod.id)} />
+                    <FontAwesomeIcon style={{color: 'white'}} icon={faTrash} onClick={() => eliminarDelCarrito(prod.id)} />
                   </div>
                 </div>
                 <hr />
