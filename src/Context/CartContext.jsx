@@ -26,7 +26,7 @@ export const CartProvider = ({ children }) => {
       const updatedItems = [...cart];
       updatedItems.splice(indexToRemove, 1);
       setCart(updatedItems);
-     
+
     }
   }
 
@@ -37,7 +37,8 @@ export const CartProvider = ({ children }) => {
   const totalCompra = () => {
     let totalPrice = 0;
     cart.forEach((item) => {
-      totalPrice += item.price;})
+      totalPrice += item.price;
+    })
     return totalPrice;
   };
 

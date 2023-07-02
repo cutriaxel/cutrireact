@@ -63,3 +63,16 @@
     text-transform: capitalize;
   }
 }
+
+@media only screen and (max-width: 768px) {
+
+  .section__container .pc__container .pc__item .pc__image {
+    width: 280px;
+    height: 160px;
+  }
+
+.custom-carousel {
+  margin-top: 15rem
+}
+
+}

@@ -28,6 +28,12 @@ const Cart = () => {
                   <div className="producto-titulo">
                     <h4>{prod.title}</h4>
                   </div>
+
+                  <div className="producto-description">
+                    <p>{prod.description}</p>
+                  </div>
+
+
                   <div className="producto-precio">
                     <p> ${prod.price}</p>
                     <FontAwesomeIcon style={{color: 'white'}} icon={faTrash} onClick={() => eliminarDelCarrito(prod.id)} />
@@ -61,7 +67,7 @@ const Cart = () => {
         <div className="carrito-vacio">
           <p>El carrito está vacío.</p>
           <Link to="/productos">
-            <button className="btn btn-primary">Ir a productos</button>
+            <button style={{backgroundColor: "#40a640"}} className="btn ">Ir a productos</button>
           </Link>
           <div className='prueba'> </div>
         </div>
