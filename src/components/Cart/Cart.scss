@@ -72,5 +72,9 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .prueba {
-  height: 150px;
+  height: 210px;
+}
+
+.resumen-compra.empty .detalle-compra {
+  display: none;
 }

@@ -10,8 +10,8 @@ const Cart = () => {
 
   return (
     <div>
-      <div className="resumen-compra">
-        <h2>Detalle de compra</h2>
+      <div className={`resumen-compra ${cart.length === 0 ? 'empty' : ''}`}>
+        <h2 className="detalle-compra">Detalle de compra</h2>
       </div>
       <hr />
 
@@ -30,9 +30,7 @@ const Cart = () => {
                   </div>
                   <div className="producto-precio">
                     <p> ${prod.price}</p>
-
                     <FontAwesomeIcon icon={faTrash} onClick={() => eliminarDelCarrito(prod.id)} />
-
                   </div>
                 </div>
                 <hr />
@@ -52,27 +50,21 @@ const Cart = () => {
                 </button>
               </div>
               <div className="btn-vaciar">
-
                 <button onClick={vaciarCarrito} className="btn btn-danger">
                   Vaciar carrito
                 </button>
-
-
-
               </div>
             </div>
           </div>
         </div>
-
       ) : (
         <div className="carrito-vacio">
           <p>El carrito está vacío.</p>
           <Link to="/productos">
             <button className="btn btn-primary">Ir a productos</button>
-            <div className='prueba'> </div>
           </Link>
+          <div className='prueba'> </div>
         </div>
-
       )}
     </div>
   );
