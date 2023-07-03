@@ -4,7 +4,9 @@
   margin-top: 16rem;
   
   h2 {
-  color: green;
+  color: #40a640;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 43px;
   }
   }
   
@@ -37,18 +39,19 @@
   
   .producto-titulo {
   h4 {
-  color: white;
+  color: #40a640;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
   }
   }
   
   .producto-precio {
   p {
-  color: green;
+  color: #40a640;
   margin-right: 30px;
-  font-size: 20px;
+  font-size: 25px;
   }
-  display: flex;
+
   }
   
   .container-compra {
@@ -59,7 +62,7 @@
   width: 50%;
   
   p {
-  color: white;
+  color: rgb(176, 169, 159) !important;
   font-size: 14px;
   line-height: 25px;
   }
@@ -68,8 +71,8 @@
   .total-compra {
   margin-left: 50px;
   h5 {
-  color: #00e602;
-  font-size: 25px;
+  color: #40a640;
+  font-size: 35px;
   }
   }
   

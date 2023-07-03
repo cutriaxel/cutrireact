@@ -11,7 +11,7 @@ const Cart = () => {
   return (
     <div>
       <div className={`resumen-compra ${cart.length === 0 ? 'empty' : ''}`}>
-        <h2 className="detalle-compra">Detalle de compra</h2>
+        <h2 className="detalle-compra">Resumen de compra</h2>
       </div>
       <hr />
 
@@ -36,7 +36,7 @@ const Cart = () => {
 
                   <div className="producto-precio">
                     <p> ${prod.price}</p>
-                    <FontAwesomeIcon style={{color: 'white'}} icon={faTrash} onClick={() => eliminarDelCarrito(prod.id)} />
+                    <FontAwesomeIcon style={{color: 'rgb(176, 169, 159)'}} icon={faTrash} onClick={() => eliminarDelCarrito(prod.id)} />
                   </div>
                 </div>
                 <hr />

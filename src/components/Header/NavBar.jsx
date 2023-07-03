@@ -35,7 +35,7 @@ function NavBar({ handleOpenModal }) {
           <Link className='nav__link'  to={"/"} >Inicio</Link>
               <Link className='nav__link'  to={"/productos"} >Productos</Link>
               <Link className='nav__link'  to={"/Contacto"} >Contacto</Link>
-              <Link className='nav__link'  to={"/Cart"} >Mis productos</Link>
+              <Link className='nav__link'  to={"/Cart"} >Mi carrito</Link>
           </Nav>
           <div className='cart-widget__count' onClick={handleOpenModal}>
               <CartWidget cartCount={cart.length} />
