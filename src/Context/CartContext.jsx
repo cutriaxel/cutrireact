@@ -1,4 +1,5 @@
 import React, { useState, createContext } from 'react';
+import './CartContext.scss';
 import Swal from 'sweetalert2';
 
 export const CartContext = createContext();

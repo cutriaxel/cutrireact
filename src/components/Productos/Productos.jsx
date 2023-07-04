@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Link } from "react-router-dom";
 import { CustomCard } from "../CustomCard/CustomCard";
 import "./Productos.scss";
 import { collection, getDocs } from 'firebase/firestore';

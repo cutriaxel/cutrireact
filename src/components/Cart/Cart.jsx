@@ -51,7 +51,7 @@ const Cart = () => {
             <hr />
             <div className="btn-compra">
               <div className="btn-pagar">
-                <button onClick={vaciarCarrito} className="btn btn-success">
+                <button style={{backgroundColor: "#40a640"}} onClick={vaciarCarrito} className="btn">
                   Ir a pagar
                 </button>
               </div>
