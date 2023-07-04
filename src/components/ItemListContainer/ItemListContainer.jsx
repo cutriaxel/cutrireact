@@ -5,6 +5,7 @@ import Banner from '../Banner/Banner';
 import PcRecomendadas from '../PcRecomendadas/PcRecomendadas';
 import { Link } from 'react-router-dom';
 import Slider from '../Slider/Slider';
+import VendidoSlider from '../VendidoSlider/VendidoSlider';
 
 function ItemListContainer({ nombre, addToCart }) {
   return (
@@ -25,9 +26,20 @@ function ItemListContainer({ nombre, addToCart }) {
           </div>
         </div>
       </div>
-    
-        <Slider />
-      
+
+      <Slider />
+      <div className='container__principal'>
+        <div className='list__container'>
+          <h5>
+            {nombre} <strong>Mas vendidos</strong>{' '}
+          </h5>
+          <hr style={{ color: 'white' }} />
+          <Link to="/productos" style={{ color: '#40a640' }}>
+            Ver todo
+          </Link>
+        </div>
+      </div>
+      <VendidoSlider />
     </>
   );
 }

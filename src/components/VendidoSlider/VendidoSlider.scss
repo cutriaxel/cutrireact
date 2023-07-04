@@ -1,0 +1,26 @@
+.item{
+  
+  min-width: 20rem;
+  padding: 2rem;
+}
+.item img{
+  width: 100%;
+  pointer-events: none;
+}
+.slider{
+  display: flex;
+  cursor: grab;
+}
+.slider-container{
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #181a1b !important;
+ 
+    width: 80%;
+}
+
+.slider img {
+  border-style: solid;
+    border-color: #40a640;
+    border-radius: 20%;
+}
