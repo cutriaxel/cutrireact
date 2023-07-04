@@ -74,12 +74,19 @@
       max-width: 90%;
 
       .img_container img {
-        width: 100%;
+        width: 300px;
         height: auto;
       }
 
       .item-detail-info {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-size: 31px;
+        }
       }
     }
   }
@@ -92,7 +99,7 @@
       padding: 20px;
 
       .img_container img {
-        width: 100%;
+        width: 300px;
         height: auto;
       }
 
