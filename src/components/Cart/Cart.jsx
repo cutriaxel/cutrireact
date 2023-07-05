@@ -67,7 +67,7 @@ const Cart = () => {
         <div className="carrito-vacio">
           <p>El carrito está vacío.</p>
           <Link to="/productos">
-            <button style={{backgroundColor: "#40a640"}} className="btn ">Ir a productos</button>
+            <button style={{backgroundColor: "#40a640"}} className="btn">Ir a productos</button>
           </Link>
           <div className='prueba'> </div>
         </div>
