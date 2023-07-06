@@ -1,6 +1,8 @@
 import { useContext, useState } from 'react'
 import './LoginScreen.scss';
-import { AuthContext } from '../../Context/AuthContext'
+import { AuthContext } from '../../Context/AuthContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom'
 
 const LoginScreen = () => {
@@ -27,33 +29,39 @@ const LoginScreen = () => {
         <div className='auth-container'>
             <div className='auth-modal'>
                 <h2>Login</h2>
-                <hr/>
+                <hr />
 
                 <form onSubmit={handleSubmit}>
-                    <input 
+                    <input
                         value={values.email}
                         onChange={handleInputChange}
-                        type='email' 
+                        type='email'
                         placeholder='Email'
                         className='form-control my-2'
                         name='email'
                     />
-                    <input 
+                    <input
                         value={values.password}
                         onChange={handleInputChange}
-                        type='password' 
+                        type='password'
                         placeholder='Contraseña'
                         className='form-control my-2'
                         name='password'
                     />
+                    <div className='inicio_container'>
+                        <button className='btn boton' style={{ backgroundColor: "#40a640" }} type='submit'>Iniciar sesión</button>
+                        <Link to="/register">Registrarme</Link>
+                    </div>
 
-                    <button className='btn btn-primary' type='submit'>Iniciar sesión</button>
-                    <Link to="/register">Registrarme</Link>
                 </form>
-                <button className='btn btn-primary' onClick={googleLogin}>Iniciar sesión con Google</button>
+                <div className='inicio_google'>
+                    <button className='btn btn-primary google-btn' onClick={googleLogin}>
+                        <FontAwesomeIcon icon={faGoogle} className='google-icon' />
+                    </button>
+                </div>
             </div>
         </div>
     )
 }
 
-export default LoginScreen
+export default LoginScreen;
