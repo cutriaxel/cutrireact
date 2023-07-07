@@ -1,6 +1,6 @@
-import React, { useState, createContext } from 'react';
-import './CartContext.scss';
-import Swal from 'sweetalert2';
+import React, { useState, createContext, } from "react";
+import "./CartContext.scss";
+import Swal from "sweetalert2";
 
 export const CartContext = createContext();
 
@@ -8,38 +8,38 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const agregarAlCarrito = (item) => {
-    setCart([...cart, item]);
+    const index = cart.findIndex((prod) => prod.id === item.id);
+
+    if (index !== -1) {
+      cart[index].cantidad += 1;
+      setCart([...cart]);
+    } else {
+      item.cantidad = 1;
+      setCart([...cart, item]);
+    }
+
     Swal.fire({
       title: `${item.title} agregado al carrito`,
-      icon: 'success',
-      timer: 2000,
+      icon: "success",
+      timer: 900,
       timerProgressBar: true,
       showConfirmButton: false,
       customClass: {
-        popup: 'custom-swal',
+        popup: "custom-swal",
       },
     });
   };
 
   const eliminarDelCarrito = (id) => {
-    const indexToRemove = cart.findIndex((item) => item.id === id);
-    if (indexToRemove !== -1) {
-      const updatedItems = [...cart];
-      updatedItems.splice(indexToRemove, 1);
-      setCart(updatedItems);
-
-    }
-  }
-
-  const isInCart = (id) => {
-    return cart.some((prod) => prod.id === id);
+    const updatedItems = cart.filter((item) => item.id !== id);
+    setCart(updatedItems);
   };
 
   const totalCompra = () => {
     let totalPrice = 0;
     cart.forEach((item) => {
-      totalPrice += item.price;
-    })
+      totalPrice += item.price * item.cantidad;
+    });
     return totalPrice;
   };
 
@@ -47,15 +47,38 @@ export const CartProvider = ({ children }) => {
     setCart([]);
   };
 
+  const sumarCantidad = (prod) => {
+    const updatedCart = cart.map((item) => {
+      if (item.id === prod.id) {
+        item.cantidad += 1;
+      }
+      return item;
+    });
+
+    setCart(updatedCart);
+  };
+
+  const restarCantidad = (prod) => {
+    const updatedCart = cart.map((item) => {
+      if (item.id === prod.id && item.cantidad > 0) {
+        item.cantidad -= 1;
+      }
+      return item;
+    });
+
+    setCart(updatedCart);
+  };
+
   return (
     <CartContext.Provider
       value={{
         cart,
         agregarAlCarrito,
-        isInCart,
         totalCompra,
         vaciarCarrito,
         eliminarDelCarrito,
+        sumarCantidad,
+        restarCantidad,
       }}
     >
       {children}

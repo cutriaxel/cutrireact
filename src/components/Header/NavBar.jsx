@@ -6,11 +6,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '..//..//assets/react.svg';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../Context/CartContext';
+import { AuthContext } from '../../Context/AuthContext'
 
 
-function NavBar({ handleOpenModal }) {
+function NavBar({ handleOpenModal, variant = false }) {
+  const { user, logout } = useContext(AuthContext)
   const [showSidebar, setShowSidebar] = useState(false);
 
   const toggleSidebar = () => {
@@ -41,7 +45,14 @@ function NavBar({ handleOpenModal }) {
               <CartWidget cartCount={cart.length} />
             </div>
         </Navbar.Collapse>
-       
+       <div>
+        <p>Bienvenido: {user.email}</p>
+        <button className='btn ' onClick={logout}>
+      <FontAwesomeIcon icon={faSignOutAlt}  onClick={logout} />
+    </button>
+
+            </div>
+           
       </Container>
     </Navbar>
       
@@ -72,7 +83,8 @@ function NavBar({ handleOpenModal }) {
           </div>
         )}
       </div> 
-
+   
+          
       
     </header>
   );

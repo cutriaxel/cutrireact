@@ -1,128 +1,159 @@
 .resumen-compra {
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 16rem;
-  
+  margin-top: 19rem;
+  margin-bottom: 60px;
+
+
   h2 {
-  color: #40a640;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 43px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
   }
-  }
-  
-  .principal-container {
+}
+
+p {
+  color: #fff;
+  margin: 0 !important;
+}
+
+.principal-container {
+  background-color: #181a1b;
+  border-radius: 8px;
+  border: 1px solid #c4c4c4;
+}
+
+.producto-container {
+  width: 800px;
+  padding: 2rem 2rem;
   display: flex;
-  flex-direction: column;
-  margin-left: 50px;
-  }
-  
-  .producto-container {
-  display: flex;
-  margin-bottom: 30px;
-  }
-  
-  .producto-imagen {
-  margin-bottom: 10px;
-  
-  img {
-  width: 250px;
-  height: auto;
-  }
-  }
-  
-  .producto-info {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin-left: 50px;
-  }
-  
-  .producto-titulo {
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.container-compra {
+  width: 300px;
+}
+
+.container-resumen-pedido {
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  border-color: white;
+  padding: 18px;
+}
+
+.title-pedido {
+  display: flex;
+  justify-content: center;
+
   h4 {
-  color: #40a640;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 30px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-  }
-  
-  .producto-precio {
-  p {
-  color: #40a640;
-  margin-right: 30px;
-  font-size: 25px;
+}
+
+.total-compra {
+  display: flex;
+  justify-content: space-between;
+
+  h5 {
+    color: white;
+    font-size: 22px;
   }
 
-  }
-  
-  .container-compra {
-  margin-top: 60px;
-  }
-  
-  .producto-description {
-  width: 50%;
-  
   p {
-  color: rgb(176, 169, 159) !important;
-  font-size: 14px;
-  line-height: 25px;
+    font-size: 20px;
   }
-  }
-  
-  .total-compra {
-  margin-left: 50px;
-  h5 {
-  color: #40a640;
-  font-size: 35px;
-  }
-  }
-  
-  .btn-compra {
+}
+
+.producto-imagen img {
+  height: 60px;
+}
+
+.producto-info {
+  margin-left: 2rem;
+}
+
+.producto-precio {
+  width: 100%;
+}
+
+.producto-precio > div {
   display: flex;
-  margin-left: 50px;
-  margin-top: 25px;
-  }
-  
-  .btn-pagar {
-  margin-right: 30px;
-  }
-  
-  .carrito-vacio {
+  justify-content: space-around;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3rem;
+  width: 180px;
+  border-radius: 8px;
+  background-color: rgba(126, 126, 131, 0.15);
+}
+
+.contador button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 6px;
+}
+
+.container-bottom {
+  margin-bottom: 200px;
+}
+
+.carrito-vacio {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   p {
-  font-size: 30px;
-  color: white;
-  margin-bottom: 45px;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 45px;
   }
-  
+
   a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.btn-compra {
+  display: flex;
+  justify-content: end;
+}
+
+.btn {
   color: white;
-  text-decoration: none;
-  }
-  }
-  
-  .btn {
-  color: white;
-  }
-  
-  .carrito-vacio__mensaje {
+  margin-right: 10px;
+}
+
+.carrito-vacio__mensaje {
   margin-bottom: 20px;
-  }
-  
-  .carrito-vacio__boton {
+}
+
+.carrito-vacio__boton {
   margin-top: 20px;
-  }
-  
-  .prueba {
+}
+
+.texto-vacio {
+  margin-bottom: 30px;
+}
+
+.prueba {
   height: 210px;
-  }
-  
-  .resumen-compra.empty .detalle-compra {
+}
+
+.resumen-compra.empty .detalle-compra {
   display: none;
-  }
+}
+
   
   @media only screen and (max-width: 768px) {
   .resumen-compra {

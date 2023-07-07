@@ -1,63 +1,71 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import { CartContext } from '../../Context/CartContext';
-import './Cart.scss';
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { CartContext } from "../../Context/CartContext";
+import "./Cart.scss";
+import { CartProduct } from "../CartProduct/CartProduct";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const Cart = () => {
-  const { cart, totalCompra, vaciarCarrito, eliminarDelCarrito } = useContext(CartContext);
+  const { cart, totalCompra, vaciarCarrito } = useContext(CartContext);
 
   return (
     <div>
-      <div className={`resumen-compra ${cart.length === 0 ? 'empty' : ''}`}>
+      <div className={`resumen-compra ${cart.length === 0 ? "empty" : ""}`}>
         <h2 className="detalle-compra">Resumen de compra</h2>
       </div>
       <hr />
 
       {cart.length > 0 ? (
-        <div>
+        <div
+          className="container-bottom"
+          style={{
+            display: "flex",
+            justifyContent: "space-evenly",
+          }}
+        >
           <div className="principal-container">
             {cart.map((prod) => (
-              <div className="producto-container" key={prod.id}>
-                <hr />
-                <div className="producto-imagen">
-                  <img src={prod.image} alt={prod.title} />
-                </div>
-                <div className="producto-info">
-                  <div className="producto-titulo">
-                    <h4>{prod.title}</h4>
-                  </div>
-
-                  <div className="producto-description">
-                    <p>{prod.description}</p>
-                  </div>
-
-
-                  <div className="producto-precio">
-                    <p> ${prod.price}</p>
-                    <FontAwesomeIcon style={{color: 'rgb(176, 169, 159)'}} icon={faTrash} onClick={() => eliminarDelCarrito(prod.id)} />
-                  </div>
-                </div>
-                <hr />
-              </div>
+              <CartProduct prod={prod} key={prod.id} />
             ))}
           </div>
 
           <div className="container-compra">
-            <div className="total-compra">
-              <h5>Total: ${totalCompra()}</h5>
+            <div className="container-resumen-pedido">
+              <div className="title-pedido">
+                <h4>RESUMEN DE PEDIDO</h4>
+              </div>
+              <hr style={{ color: "white" }} />
+              <div className="total-compra">
+                <div>
+                  <h5>TOTAL:</h5>
+                </div>
+                <div>
+                  <p>${totalCompra()}</p>
+                </div>
+              </div>
             </div>
             <hr />
             <div className="btn-compra">
               <div className="btn-pagar">
-                <button style={{backgroundColor: "#40a640"}} onClick={vaciarCarrito} className="btn">
-                  Ir a pagar
+                <button
+                  style={{ backgroundColor: "#4a90e2" }}
+                  onClick={vaciarCarrito}
+                  className="btn"
+                >
+                  CONTINUAR
                 </button>
               </div>
               <div className="btn-vaciar">
-                <button onClick={vaciarCarrito} className="btn btn-danger">
-                  Vaciar carrito
+                <button
+                  onClick={vaciarCarrito}
+                  className="btn btn-danger"
+                >
+                  <FontAwesomeIcon
+                    icon={faTrash}
+                    className="mr-2"
+                    style={{ fontSize: "22px" }}
+                  />
                 </button>
               </div>
             </div>
@@ -65,11 +73,15 @@ const Cart = () => {
         </div>
       ) : (
         <div className="carrito-vacio">
-          <p>El carrito está vacío.</p>
+          <div className="texto-vacio">
+            <p>El carrito está vacío.</p>
+          </div>
           <Link to="/productos">
-            <button style={{backgroundColor: "#40a640"}} className="btn">Ir a productos</button>
+            <button style={{ backgroundColor: "#40a640" }} className="btn">
+              Ir a productos
+            </button>
           </Link>
-          <div className='prueba'> </div>
+          <div className="prueba"> </div>
         </div>
       )}
     </div>
