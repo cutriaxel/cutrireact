@@ -12,7 +12,6 @@ export const CartProduct = ({ prod }) => {
 
   return (
     <div className="producto-container" key={prod.id}>
-      <hr />
       <div className="producto-imagen">
         <img src={prod.image} alt={prod.title} />
       </div>

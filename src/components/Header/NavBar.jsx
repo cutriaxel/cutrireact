@@ -44,14 +44,16 @@ function NavBar({ handleOpenModal, variant = false }) {
           <div className='cart-widget__count' onClick={handleOpenModal}>
               <CartWidget cartCount={cart.length} />
             </div>
-        </Navbar.Collapse>
-       <div>
+
+            <div>
         <p>Bienvenido: {user.email}</p>
         <button className='btn ' onClick={logout}>
       <FontAwesomeIcon icon={faSignOutAlt}  onClick={logout} />
     </button>
 
             </div>
+        </Navbar.Collapse>
+      
            
       </Container>
     </Navbar>
