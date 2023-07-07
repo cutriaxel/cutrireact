@@ -33,12 +33,12 @@ const CartModal = ({
                       <FontAwesomeIcon icon={faTrash} />
                     </Button>
                   </div>
-                  <p>{item.cantidad}</p>
+                  <p>Cantidad: {item.cantidad}</p>
                   <p>Precio: ${item.price}</p>
                   <hr />
                 </div>
               ))}
-              {/* <p>Precio Total: ${totalCompra()}</p> */}
+              { <p>Precio Total: ${totalCompra()}</p> }
             </div>
           ) : (
             <p>No hay productos en el carrito</p>
