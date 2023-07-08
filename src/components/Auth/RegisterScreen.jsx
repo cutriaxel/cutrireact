@@ -47,8 +47,8 @@ const RegisterScreen = () => {
                         name='password'
                     />
 
-                    <button className='btn btn-primary' type='submit'>Registrarse</button>
-                    <Link to='/'>Ya estoy registrado</Link>
+                    <button  className='btn btn-primary' type='submit'>Registrarse</button>
+                    <Link to='/login'>Ya estoy registrado</Link>
                 </form>
             </div>
         </div>

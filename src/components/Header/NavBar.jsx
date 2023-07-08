@@ -28,33 +28,37 @@ function NavBar({ handleOpenModal, variant = false }) {
    <Navbar bg="dark" expand="lg" className="navbar__container">
     
       <Container style={{ display: 'contents' }}>
-        <div className="logo__container">
-          <img src={logo} alt="Logo" className="logo" />
-        </div>
-
+  
         <Navbar.Toggle aria-controls="navbarNav" />
 
-        <Navbar.Collapse id="navbarNav" className="justify-content-center">
+        <Navbar.Collapse id="navbarNav" >
+          <div className='cutritech-title'>
+          <h2>CutriTECH</h2>
+          </div>
           <Nav className="nav__link">
           <Link className='nav__link'  to={"/"} >Inicio</Link>
               <Link className='nav__link'  to={"/productos"} >Productos</Link>
               <Link className='nav__link'  to={"/Contacto"} >Contacto</Link>
               <Link className='nav__link'  to={"/Cart"} >Mi carrito</Link>
           </Nav>
-          <div className='cart-widget__count' onClick={handleOpenModal}>
-              <CartWidget cartCount={cart.length} />
-            </div>
+          
 
             <div>
               
         <p>Bienvenido: {user.email}</p>
         
         
-        <button className='btn cerrar_sesion' onClick={logout}>
+        
+
+       <div className='cart-widget__count' onClick={handleOpenModal}>
+              <CartWidget cartCount={cart.length} />
+              <button className='btn cerrar_sesion' onClick={logout}>
                <FontAwesomeIcon icon={faSignOutAlt}  onClick={logout} />
        </button>
+            </div>
     
             </div>
+            
         </Navbar.Collapse>
       
            
@@ -83,7 +87,7 @@ function NavBar({ handleOpenModal, variant = false }) {
               <li><Link className='nav__link' to={"/productos/Monitores"} >Monitores</Link></li>
               <li> <Link className='nav__link' to={"/productos/Procesadores"} >Procesadores</Link></li>
               <li><Link className='nav__link' to={"/productos/Perifericos"} >Perifericos</Link></li>
-              <li><Link className='nav__link' to={"/productos"} >Notebooks</Link></li>
+              <li><Link className='nav__link' to={"/productos/Computadoras"} >Computadoras</Link></li>
             </ul>
           </div>
         )}

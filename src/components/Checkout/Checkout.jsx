@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
 import { CartContext } from "../../Context/CartContext";
 import { writeBatch, collection, addDoc, doc } from "firebase/firestore";
 import { db } from "../../firebase/config";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import Swal from "sweetalert2";
 import './Checkout.scss';
 import * as Yup from "yup";
 
@@ -37,6 +37,7 @@ const Checkout = () => {
             cliente: values,
             total: totalCompra(),
             fecha: new Date(),
+            
         };
 
         const batch = writeBatch(db);
@@ -52,6 +53,7 @@ const Checkout = () => {
                     productId: product.id,
                     cantidad: product.cantidad,
                     precio: product.price,
+                    title: product.title
                 };
 
                 const orderProductDocRef = doc(orderProductsRef);
@@ -68,19 +70,33 @@ const Checkout = () => {
     };
 
     if (orderId) {
-        return (
-            <div className="form-control my-5">
-                <h2>Tu compra se registró correctamente!</h2>
-                <hr />
-                <p>
-                    Tu número de compra es: <strong>{orderId}</strong>
-                </p>
-                <Link to="/" className="btn btn-primary">
-                    Volver al inicio
-                </Link>
-            </div>
-        );
-    }
+        Swal.fire({
+          title: "Tu compra se registró correctamente!",
+          html: `
+            <hr />
+            <p>Tu número de compra es: <strong>${orderId}</strong></p>
+            <button id="goToHomeButton" class="btn btn-primary custom-button">Ir al inicio</button>
+          `,
+          icon: "success",
+          showConfirmButton: false,
+          timer: 15000,
+          timerProgressBar: true,
+          customClass: {
+            popup: "custom-swal",
+          },
+        }).then((result) => {
+          if (!result.dismiss) {
+            window.location.href = "/";
+          }
+        });
+      
+        document.getElementById("goToHomeButton").addEventListener("click", function() {
+          window.location.href = "/";
+        });
+      }
+      
+
+    
 
     return (
         <div className="container-pago ">

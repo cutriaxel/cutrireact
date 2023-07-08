@@ -3,6 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 import './CartModal.scss';
 import { CartContext } from '../../Context/CartContext';
 
@@ -55,12 +56,15 @@ const CartModal = ({
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={handleCloseModal}>
+        <Button variant="secondary" style={{backgroundColor: '#40a640'}} onClick={handleCloseModal}>
           Seguir comprando
         </Button>
-        <Button variant="success" onClick={vaciarCarrito}>
+        <Link to='/cart'>
+        <Button variant="success" style={{ backgroundColor: "#4a90e2" }}
+                  className="btn" onClick={handleCloseModal}>
           Confirmar compra
         </Button>
+        </Link>
       </Modal.Footer>
     </Modal>
   );

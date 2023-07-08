@@ -108,19 +108,28 @@ header {
   text-align: center;
 }
 
+.cutritech-title h2 {
 
+color: #01f603;
+}
+
+#navbarNav {
+  display: flex;
+  justify-content: space-around;
+}
 
 @media (max-width: 768px){
 .nav__link{
   margin-bottom: 10px;
 }}
 
-.navbar__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
+// .navbar__container {
+//   display: flex;
+//   // flex-direction: column;
+//   // align-items: center;
+//   justify-content: space-between;
+//   padding: 20px;
+// }
 
 .logo__container {
   display: flex;
