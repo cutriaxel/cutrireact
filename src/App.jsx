@@ -9,10 +9,9 @@ function App() {
 
   return (
     <AuthContextProvider>
-  <CartProvider>
-
-    <AppRouter />
-    </CartProvider>
+        <CartProvider>
+              <AppRouter />
+        </CartProvider>
     </AuthContextProvider>
   );
 }

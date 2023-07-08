@@ -1,4 +1,4 @@
-import React, { useState, createContext, } from "react";
+import React, { useState, createContext } from "react";
 import "./CartContext.scss";
 import Swal from "sweetalert2";
 
@@ -8,7 +8,9 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const agregarAlCarrito = (item) => {
-    const index = cart.findIndex((prod) => prod.id === item.id);
+    
+const index = cart.findIndex((prod) => prod.id === item.id);
+    
 
     if (index !== -1) {
       cart[index].cantidad += 1;
@@ -17,6 +19,8 @@ export const CartProvider = ({ children }) => {
       item.cantidad = 1;
       setCart([...cart, item]);
     }
+
+   
 
     Swal.fire({
       title: `${item.title} agregado al carrito`,
@@ -29,6 +33,8 @@ export const CartProvider = ({ children }) => {
       },
     });
   };
+
+  
 
   const eliminarDelCarrito = (id) => {
     const updatedItems = cart.filter((item) => item.id !== id);

@@ -11,10 +11,13 @@ import { ItemDetail } from '../components/ItemDetail/ItemDetail';
 import WhatsApp from '../components/WhatsApp/WhatsApp';
 import Cart from '../components/Cart/Cart';
 import { AuthContext } from "../Context/AuthContext";
+import { CartContext } from "../Context/CartContext";
 import LoginScreen from '../components/Auth/LoginScreen';
 import RegisterScreen from '../components/Auth/RegisterScreen';
+import Checkout from '../components/Checkout/Checkout';
 
 const AppRouter = () => {
+  const { cart, totalCompra, vaciarCarrito } = useContext(CartContext);
   const { user } = useContext(AuthContext);
   const [showModal, setShowModal] = useState(false);
 
@@ -35,6 +38,7 @@ const AppRouter = () => {
             <Route path="/productos/:productoId" element={<FilteredProducts />} />
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout cart={cart} totalCompra={totalCompra} vaciarCarrito={vaciarCarrito} />} />
             <Route path="/itemDetail" element={<ItemDetail />} />
           </Routes>
           <WhatsApp phoneNumber={phoneNumber} />

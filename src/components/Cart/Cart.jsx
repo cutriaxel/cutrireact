@@ -48,13 +48,14 @@ const Cart = () => {
             <hr />
             <div className="btn-compra">
               <div className="btn-pagar">
+                <Link to='/checkout'> 
                 <button
                   style={{ backgroundColor: "#4a90e2" }}
-                  onClick={vaciarCarrito}
                   className="btn"
                 >
                   CONTINUAR
                 </button>
+                </Link>
               </div>
               <div className="btn-vaciar">
                 <button
