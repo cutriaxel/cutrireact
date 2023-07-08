@@ -46,11 +46,14 @@ function NavBar({ handleOpenModal, variant = false }) {
             </div>
 
             <div>
+              
         <p>Bienvenido: {user.email}</p>
-        <button className='btn ' onClick={logout}>
-      <FontAwesomeIcon icon={faSignOutAlt}  onClick={logout} />
-    </button>
-
+        
+        
+        <button className='btn cerrar_sesion' onClick={logout}>
+               <FontAwesomeIcon icon={faSignOutAlt}  onClick={logout} />
+       </button>
+    
             </div>
         </Navbar.Collapse>
       
@@ -80,7 +83,7 @@ function NavBar({ handleOpenModal, variant = false }) {
               <li><Link className='nav__link' to={"/productos/Monitores"} >Monitores</Link></li>
               <li> <Link className='nav__link' to={"/productos/Procesadores"} >Procesadores</Link></li>
               <li><Link className='nav__link' to={"/productos/Perifericos"} >Perifericos</Link></li>
-              <li> <Link className='nav__link' to={"/productos"} >Notebooks</Link></li>
+              <li><Link className='nav__link' to={"/productos"} >Notebooks</Link></li>
             </ul>
           </div>
         )}

@@ -11,6 +11,11 @@ const CartModal = ({
   handleCloseModal,
 }) => {
 
+  const calcularPrecioTotal = () => {
+    return prod.price * prod.cantidad;
+  };
+
+
   const {cart, eliminarDelCarrito, totalCompra, vaciarCarrito} = useContext(CartContext);
 
   return (
@@ -29,9 +34,13 @@ const CartModal = ({
                   <p>{item.title}</p>
                   <div className="item-container">
                     <img src={item.image} alt={item.title} width="100" height="100" />
-                    <Button style={{ marginLeft: '30px' }} variant="danger" onClick={() => eliminarDelCarrito(item.id)}>
-                      <FontAwesomeIcon icon={faTrash} />
-                    </Button>
+                    <div>
+            <FontAwesomeIcon
+              style={{ color: "rgb(176, 169, 159)" }}
+              icon={faTrash}
+              onClick={() => eliminarDelCarrito(item.id)}
+            />
+          </div>
                   </div>
                   <p>Cantidad: {item.cantidad}</p>
                   <p>Precio: ${item.price}</p>

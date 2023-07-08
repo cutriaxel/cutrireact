@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .auth-container {
   width: 100%;
   height: 100vh;
@@ -15,29 +10,83 @@ body {
 }
 
 .auth-modal {
-  background-color: white;
-  padding: 20px;
-  width: 500px;
-  border-radius: 15px;
+  background-color: rgb(51, 51, 51, 0.602);
+  padding: 1rem;
+  width: 400px;
+  text-align: center;
 }
 
-.inicio_container {
-  margin-bottom: 13px;
-
-  .boton {
-    margin-right: 13px;
-  }
+.auth-modal h2 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.auth-modal hr {
+  border: none;
+  border-top: 1px solid #fff;
+  margin-bottom: 2rem;
+}
 
+.auth-modal input {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: white thin solid;
+  text-align: center;
+  outline: none;
+  padding: .2rem 0;
+  font-size: .9rem;
+  color: white;
+}
 
-.google-btn {
+.auth-modal input[type="email"],
+.auth-modal input[type="password"] {
+  color: black;
+}
+
+.auth-modal .inicio_container {
+  margin-bottom: 2rem;
+}
+
+.auth-modal .inicio_container .btn {
+  margin-right: 1rem;
+  background-color: #40a640;
+  color: #fff;
+  border-radius: 2rem;
+  padding: .7rem 2rem;
+  font-weight: 600;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+.auth-modal .inicio_container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.auth-modal .inicio_google {
+  margin-bottom: 2rem;
+}
+
+.auth-modal .google-btn {
   background-color: #DB4437;
   color: white;
   border-color: #DB4437;
+  padding: .7rem;
+  border-radius: 2rem;
+  cursor: pointer;
 }
 
-.google-btn:hover {
+.auth-modal .google-btn:hover {
   background-color: #C53929;
   border-color: #C53929;
+}
+
+.inicio_container {
+margin-top: 25px;
 }

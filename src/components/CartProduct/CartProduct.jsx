@@ -33,7 +33,7 @@ export const CartProduct = ({ prod }) => {
             <FontAwesomeIcon
               style={{ color: "rgb(176, 169, 159)" }}
               icon={faTrash}
-              onClick={() => eliminarDelCarrito(prod.id)}
+              onClick={() => eliminarDelCarrito(item.id)}
             />
           </div>
         </div>

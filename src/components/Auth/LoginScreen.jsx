@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './LoginScreen.scss';
 import { AuthContext } from '../../Context/AuthContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -28,7 +28,7 @@ const LoginScreen = () => {
     return (
         <div className='auth-container'>
             <div className='auth-modal'>
-                <h2>Login</h2>
+                <h2>Iniciar Sesion</h2>
                 <hr />
 
                 <form onSubmit={handleSubmit}>
@@ -50,7 +50,7 @@ const LoginScreen = () => {
                     />
                     <div className='inicio_container'>
                         <button className='btn boton' style={{ backgroundColor: "#40a640" }} type='submit'>Iniciar sesión</button>
-                        <Link to="/register">Registrarme</Link>
+                      <button className='btn boton' style={{ backgroundColor: "#ffff" }}> <Link style={{ color: "black" }} to="/register">Registrarme</Link></button> 
                     </div>
 
                 </form>
@@ -65,3 +65,4 @@ const LoginScreen = () => {
 }
 
 export default LoginScreen;
+
