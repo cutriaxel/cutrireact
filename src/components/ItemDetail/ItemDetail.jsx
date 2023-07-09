@@ -5,7 +5,7 @@ import { CartContext } from '../../Context/CartContext';
 import { useLocation } from 'react-router-dom';
 
 
-export const ItemDetail = ({ addToCart }) => {
+export const ItemDetail = () => {
   const { state } = useLocation();
   const { agregarAlCarrito } = useContext(CartContext);
 ;
