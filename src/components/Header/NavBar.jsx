@@ -32,7 +32,7 @@ function NavBar({ handleOpenModal, variant = false }) {
 
           <Navbar.Collapse id="navbarNav" >
             <div className='cutritech-title'>
-              <h2>cutriTech</h2>
+              <h2>cutri<spam  className="logo-highlight">Tech</spam></h2>
             </div>
             <Nav className="nav__link">
               <Link className='nav__link' to={"/"} >Inicio</Link>

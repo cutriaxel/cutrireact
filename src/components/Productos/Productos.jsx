@@ -35,7 +35,6 @@ const Productos = () => {
 
   const handleAddToCart = (item) => {
     agregarAlCarrito(item); 
-    alert(`${item.title} agregado al carrito`);
   };
 
   return (
@@ -46,9 +45,11 @@ const Productos = () => {
 
       <div className="principal-card">
         {loading ? (
+          
           <div className="loading-spinner">
             <FadeLoader color="#01f603" loading={loading} size={35} />
           </div>
+        
         ) : (
           <div className="card-container">
             {cardData.map((card) => (
