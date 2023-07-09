@@ -16,18 +16,18 @@ export const CartProduct = ({ prod }) => {
         <img src={prod.image} alt={prod.title} />
       </div>
       <div className="producto-info">
-        <p>{prod.title}</p>
-        <p>{prod.id}</p>
+        <p style={{color: 'white', fontSize: '18px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif'}}>{prod.title}</p>
+        <p style={{color: 'white', fontSize: '10px'}}>{prod.id}</p>
       </div>
       <div className="contador">
         <button onClick={() => restarCantidad(prod)}>-</button>
-        <p>{prod.cantidad}</p>
+        <p style={{color: 'white', fontSize: '16px', }}>{prod.cantidad}</p>
         <button onClick={() => sumarCantidad(prod)}>+</button>
       </div>
       <div className="producto-precio">
         <div>
           <div>
-            <p>${calcularPrecioTotal()}</p>
+            <p style={{color: 'white', fontSize: '20px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif'}}>${calcularPrecioTotal()}</p>
           </div>
           <div>
             <FontAwesomeIcon

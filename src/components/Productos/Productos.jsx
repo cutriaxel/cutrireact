@@ -55,10 +55,12 @@ const Productos = () => {
               <div key={card.id} className="custom-card-link">
                 <CustomCard card={card} addToCart={handleAddToCart} /> 
               </div>
+              
             ))}
           </div>
         )}
       </div>
+      <div className="help"></div>
     </>
   );
 };

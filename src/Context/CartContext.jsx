@@ -25,7 +25,7 @@ const index = cart.findIndex((prod) => prod.id === item.id);
     Swal.fire({
       title: `${item.title} agregado al carrito`,
       icon: "success",
-      timer: 900,
+      timer: 2000,
       timerProgressBar: true,
       showConfirmButton: false,
       customClass: {

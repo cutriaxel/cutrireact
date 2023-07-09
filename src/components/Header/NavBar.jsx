@@ -4,7 +4,6 @@ import CartWidget from '../CartWidget/CartWidget';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '..//..//assets/react.svg';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
@@ -21,52 +20,38 @@ function NavBar({ handleOpenModal, variant = false }) {
     setShowSidebar(!showSidebar);
   };
 
-  const {cart} = useContext(CartContext);
+  const { cart } = useContext(CartContext);
 
   return (
     <header>
-   <Navbar bg="dark" expand="lg" className="navbar__container">
-    
-      <Container style={{ display: 'contents' }}>
-  
-        <Navbar.Toggle aria-controls="navbarNav" />
+      <Navbar bg="dark" expand="lg" className="navbar__container">
 
-        <Navbar.Collapse id="navbarNav" >
-          <div className='cutritech-title'>
-          <h2>CutriTECH</h2>
-          </div>
-          <Nav className="nav__link">
-          <Link className='nav__link'  to={"/"} >Inicio</Link>
-              <Link className='nav__link'  to={"/productos"} >Productos</Link>
-              <Link className='nav__link'  to={"/Contacto"} >Contacto</Link>
-              <Link className='nav__link'  to={"/Cart"} >Mi carrito</Link>
-          </Nav>
-          
+        <Container style={{ display: 'contents' }}>
 
+          <Navbar.Toggle aria-controls="navbarNav" />
+
+          <Navbar.Collapse id="navbarNav" >
+            <div className='cutritech-title'>
+              <h2>cutriTech</h2>
+            </div>
+            <Nav className="nav__link">
+              <Link className='nav__link' to={"/"} >Inicio</Link>
+              <Link className='nav__link' to={"/productos"} >Productos</Link>
+              <Link className='nav__link' to={"/Contacto"} >Contacto</Link>
+              <Link className='nav__link' to={"/Cart"} >Mi carrito</Link>
+            </Nav>
             <div>
-              
-        <p>Bienvenido: {user.email}</p>
-        
-        
-        
-
-       <div className='cart-widget__count' onClick={handleOpenModal}>
-              <CartWidget cartCount={cart.length} />
-              <button className='btn cerrar_sesion' onClick={logout}>
-               <FontAwesomeIcon icon={faSignOutAlt}  onClick={logout} />
-       </button>
+              <p style={{color: '#01f603', fontSize: '20px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif'}}>Bienvenido: {user.email}</p>
+              <div className='cart-widget__count' onClick={handleOpenModal}>
+                <CartWidget cartCount={cart.length} />
+                <button className='btn cerrar_sesion' onClick={logout}>
+                  <FontAwesomeIcon icon={faSignOutAlt} onClick={logout} />
+                </button>
+              </div>
             </div>
-    
-            </div>
-            
-        </Navbar.Collapse>
-      
-           
-      </Container>
-    </Navbar>
-      
-      
-      
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <div className="sidebar__container">
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <div className='hamburguer-button'>
@@ -91,10 +76,7 @@ function NavBar({ handleOpenModal, variant = false }) {
             </ul>
           </div>
         )}
-      </div> 
-   
-          
-      
+      </div>
     </header>
   );
 }

@@ -41,7 +41,7 @@ const Cart = () => {
                   <h5>TOTAL:</h5>
                 </div>
                 <div>
-                  <p>${totalCompra()}</p>
+                  <p style={{color: 'white', fontSize: '23px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif'}}>${totalCompra()}</p>
                 </div>
               </div>
             </div>

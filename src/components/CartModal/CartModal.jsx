@@ -43,8 +43,8 @@ const CartModal = ({
             />
           </div>
                   </div>
-                  <p>Cantidad: {item.cantidad}</p>
-                  <p>Precio: ${item.price}</p>
+                  <p style={{color: 'white', fontSize: '18px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif'}}>Cantidad: {item.cantidad}</p>
+                  <p style={{color: 'white', fontSize: '18px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif'}}>Precio: ${item.price}</p>
                   <hr />
                 </div>
               ))}
