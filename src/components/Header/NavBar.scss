@@ -19,7 +19,6 @@ header {
   padding: 5px;
 }
 
-
 .cutritech-title {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -29,7 +28,6 @@ header {
   border-top: 0 !important;
   padding: 10px;
 }
-
 
 .sidebar {
   display: flex;
@@ -48,10 +46,7 @@ header {
     transform: translateX(0);
   }
 
-  @media (max-width: 768px)
-  
-  
-  {
+  @media (max-width: 768px) {
     width: 100%;
   }
 
@@ -102,7 +97,6 @@ header {
 }
 
 .cart-widget__count span {
-
   background-color: #01f603;
   margin-left: 5px;
   border-radius: 70%;
@@ -113,9 +107,16 @@ header {
   text-align: center;
 }
 
-.cutritech-title h2 {
+.iconos-nav {
+  margin-right: 5px;
+}
 
-color: white;
+.iconos-sidebar {
+  margin-right: 4px;
+}
+
+.cutritech-title h2 {
+  color: white;
 }
 
 .logo-highlight {
@@ -127,11 +128,11 @@ color: white;
   justify-content: space-around;
 }
 
-@media (max-width: 768px){
-.nav__link{
-  margin-bottom: 10px;
-}}
-
+@media (max-width: 768px) {
+  .nav__link {
+    margin-bottom: 10px;
+  }
+}
 
 .logo__container {
   display: flex;
@@ -152,19 +153,19 @@ color: white;
   margin: 0;
   display: flex;
   justify-content: center;
-  font-family: "Montserrat",Sans-serif;
-}
+  font-family: "Montserrat", Sans-serif;
 
-.nav__link .nav__link {
-  color: #d2cccc;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 10px;
-  transition: color 0.3s;
-}
+  .nav__link {
+    color: #d2cccc;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
 
-.nav__link .nav__link:hover {
-  color: #2cbc2c;
+  .nav__link:hover {
+    color: #2cbc2c;
+  }
 }
 
 .cerrar_sesion {
