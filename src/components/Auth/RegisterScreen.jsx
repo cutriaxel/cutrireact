@@ -45,8 +45,7 @@ const RegisterScreen = () => {
                         placeholder='Contraseña'
                         className='form-control my-2'
                         name='password'
-                    />
-
+                    />            
                     <button  className='btn btn-primary' type='submit'>Registrarse</button>
                     <Link to='/login'>Ya estoy registrado</Link>
                 </form>

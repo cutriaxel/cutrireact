@@ -11,13 +11,11 @@ export const AuthContextProvider = ({ children }) => {
   });
 
   const login = (values) => {
-    signInWithEmailAndPassword(auth, values.email, values.password)
-      .catch((e) => console.log(e));
+    return signInWithEmailAndPassword(auth, values.email, values.password);
   };
 
   const register = (values) => {
-    createUserWithEmailAndPassword(auth, values.email, values.password)
-      .catch((e) => console.log(e));
+    return createUserWithEmailAndPassword(auth, values.email, values.password);
   };
 
   const logout = () => {
