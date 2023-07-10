@@ -48,7 +48,7 @@ function NavBar({ handleOpenModal, variant = false }) {
               </Link>
             </Nav>
             <div>
-              <p style={{ color: '#01f603', fontSize: '20px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif' }}>Bienvenido: {user.email}</p>
+              <p style={{ color: 'green', fontSize: '20px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif' }}>Bienvenido: {user.email}</p>
               <div className='cart-widget__count' onClick={handleOpenModal}>
                 <CartWidget cartCount={cart.length} />
                 <button className='btn cerrar_sesion' onClick={logout}>

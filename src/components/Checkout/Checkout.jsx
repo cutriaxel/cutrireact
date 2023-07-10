@@ -74,7 +74,7 @@ const Checkout = () => {
           title: "Tu compra se registró correctamente!",
           html: `
             <hr />
-            <p>Tu número de compra es: <strong>${orderId}</strong></p>
+            <p>Tu codigo de la compra es: <strong>${orderId}</strong></p>
             <button id="goToHomeButton" class="btn btn-primary custom-button">Ir al inicio</button>
           `,
           icon: "success",
