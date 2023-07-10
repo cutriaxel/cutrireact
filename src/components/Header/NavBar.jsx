@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
-import './NavBar.scss';
+import './NavBar.scss'
+import logo from '../../assets/tech.png';
 import CartWidget from '../CartWidget/CartWidget';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -28,11 +29,12 @@ function NavBar({ handleOpenModal, variant = false }) {
     <header>
       <Navbar bg="dark" expand="lg" className="navbar__container">
         <Container style={{ display: 'contents' }}>
-          <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
-          <div className='cutritech-title'>
-  <h2>cutri<span className="logo-highlight">Tech</span></h2>
-</div>
+            <div className='cutritech-title'>
+              <Link to='/'>
+                <img src={logo} alt={logo} style={{ width: '150px', height: '120px' }}></img>
+              </Link>
+            </div>
             <Nav className="nav__link">
               <Link className='nav__link' to={"/"} >
                 <Home className='iconos-nav' /> Inicio
@@ -47,15 +49,15 @@ function NavBar({ handleOpenModal, variant = false }) {
                 <ShoppingCartIcon className='iconos-nav' /> Mi carrito
               </Link>
             </Nav>
-            <div>
+            <div className='logout_container'>
               <p style={{ color: 'green', fontSize: '20px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif' }}>Bienvenido: {user.email}</p>
               <div className='cart-widget__count' onClick={handleOpenModal}>
                 <CartWidget cartCount={cart.length} />
                 <div>
-                <button className='btn cerrar_sesion' onClick={logout}>
-  <span style={{ color: 'white' }}>Cerrar sesión</span>
-  <ExitToAppIcon style={{ color: 'green', marginLeft: '5px' }} />
-</button>
+                  <button className='btn cerrar_sesion' onClick={logout}>
+                    <span style={{ color: 'white' }}>Cerrar sesión</span>
+                    <ExitToAppIcon style={{ color: 'green', marginLeft: '5px' }} />
+                  </button>
                 </div>
               </div>
             </div>

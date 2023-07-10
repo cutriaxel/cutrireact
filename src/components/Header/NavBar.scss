@@ -123,6 +123,26 @@ header {
   .nav__link {
     margin-bottom: 10px;
   }
+
+  #navbarNav {
+    display: flex;
+      flex-direction: column;
+  }
+  
+  .logout_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+  }
+  
+  .cutritech-title{
+    margin-bottom: 12px;
+  }
+
+  .nav__link a {
+    margin-bottom: 5px;
+  }
 }
 
 .logo__container {
@@ -151,6 +171,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     margin: 0 10px;
+    align-items: center;
     transition: color 0.3s;
   }
 
@@ -162,3 +183,10 @@ header {
 .cerrar_sesion {
   display: flex;
 }
+
+
+#basic-navbar-nav {
+  display: flex;
+  justify-content: space-around;
+}
+

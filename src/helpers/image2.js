@@ -6,6 +6,8 @@ import image14 from '../assets/imagen14.jpg'
 import image15 from '../assets/imagen15.jpg'
 import image8 from '../assets/imagen8.jpg'
 import imagen9 from '../assets/imagen9.jpg'
+import logo from '../assets/tech.png'
+import logo2 from '../assets/cutrilogo.png'
 
 
-export default [image10,image11,image12,image13,image14,image15, image8, imagen9]
+export default [image10,image11,image12,image13,image14,image15, image8, imagen9, logo, logo2]
