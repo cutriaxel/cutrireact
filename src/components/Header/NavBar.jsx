@@ -30,9 +30,9 @@ function NavBar({ handleOpenModal, variant = false }) {
         <Container style={{ display: 'contents' }}>
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
-            <div className='cutritech-title'>
-              <h2>cutri<spam className="logo-highlight">Tech</spam></h2>
-            </div>
+          <div className='cutritech-title'>
+  <h2>cutri<span className="logo-highlight">Tech</span></h2>
+</div>
             <Nav className="nav__link">
               <Link className='nav__link' to={"/"} >
                 <Home className='iconos-nav' /> Inicio
@@ -51,10 +51,12 @@ function NavBar({ handleOpenModal, variant = false }) {
               <p style={{ color: 'green', fontSize: '20px', fontFamily: 'Cambria, Cochin, Georgia, Times, "Times New Roman", serif' }}>Bienvenido: {user.email}</p>
               <div className='cart-widget__count' onClick={handleOpenModal}>
                 <CartWidget cartCount={cart.length} />
+                <div>
                 <button className='btn cerrar_sesion' onClick={logout}>
-                  <spam style={{ color: 'white' }}>Cerrar sesión</spam>
-                  <ExitToAppIcon style={{ color: 'green', marginLeft: '5px' }} />
-                </button>
+  <span style={{ color: 'white' }}>Cerrar sesión</span>
+  <ExitToAppIcon style={{ color: 'green', marginLeft: '5px' }} />
+</button>
+                </div>
               </div>
             </div>
           </Navbar.Collapse>

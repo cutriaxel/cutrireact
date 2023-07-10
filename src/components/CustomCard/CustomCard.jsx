@@ -26,7 +26,7 @@ export const CustomCard = ({ card }) => {
           onClick={() => agregarAlCarrito(card)}
           id="center-button"
         >
-          ADD TO CART
+          AGREGAR
         </Button>
       </Card.Body>
     </Card>
