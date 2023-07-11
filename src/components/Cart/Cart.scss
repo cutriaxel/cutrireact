@@ -161,7 +161,51 @@ p {
     margin-top: 25rem;
   }
   
+.container-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.principal-container {
+   
+    margin-bottom: 25px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.producto-container {
+  display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.producto-imagen {
+  margin-bottom: 25px;
+}
+
+.producto-info {
+  display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.contador {
+  margin-bottom: 25px;
+}
+
+.btn-compra {
+  display: flex;
+  justify-content: center;
   }
+
+}
 
  
 

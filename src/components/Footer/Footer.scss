@@ -97,6 +97,8 @@ footer {
 @media only screen and (max-width: 768px) {
   .container {
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
   }
 
   .footer-column {
@@ -104,7 +106,9 @@ footer {
   }
 
   .social-icons-column {
-    justify-content: center;
+    
+      display: flex;
+      align-items: start;
   }
 }
 
@@ -112,6 +116,7 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
     flex-wrap: wrap;
+    
   }
 
   .footer-column {
